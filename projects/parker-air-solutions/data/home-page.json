@@ -1,0 +1,52 @@
+{
+  "hero": {
+    "heading": "industry professionals specialising in commercial and residential air conditioning.",
+    "ctaText": "GET A QUOTE",
+    "ctaLink": "/contact"
+  },
+  "whyChooseUs": {
+    "heading": "Why Choose Us",
+    "paragraph": "At Parker Air Solutions, we deliver more than just air conditioning. With a commitment to top-quality installations and premium products, we ensure your comfort and peace of mind. Our honest, professional approach means you'll always know what to expect from start to finish, and our expert team is here to provide reliable service you can count on. Whether it's your home or business, we bring the same level of care, precision, and expertise to every project."
+  },
+  "features": [
+    {
+      "heading": "We specialise in Air Conditioning",
+      "paragraph": "From marine air conditioning to residential and commercial systems, Parker Air Solutions delivers tailored, expert installation and service to meet your unique cooling needs."
+    },
+    {
+      "heading": "TRUSTED Industry PROFESSIONALS",
+      "paragraph": "With years of experience and a commitment to honesty and quality, Parker Air Solutions provides reliable, professional service that you can trust for every job."
+    },
+    {
+      "heading": "Commercial and Residential Products",
+      "paragraph": "Whether it's a large commercial project or your home, Parker Air Solutions offers premium air conditioning systems and services that ensure comfort and efficiency every time."
+    }
+  ],
+  "servicesSection": {
+    "heading": "Our Services"
+  },
+  "whatWeDeliver": {
+    "heading": "What we Deliver",
+    "paragraph": "We're committed to delivering exceptional service that exceeds expectations. From residential homes to commercial spaces, our expert team ensures every job is completed with precision, professionalism, and care.",
+    "bulletPoints": [
+      "Quality Products And Installation",
+      "Marine AC Experts",
+      "Strong Work Ethic",
+      "Passion For Excellence",
+      "Transparency And Honesty",
+      "Clear Communication"
+    ]
+  },
+  "brands": {
+    "subheading": "AFFILIATE BRANDS",
+    "heading": "Products you can trust",
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere."
+  },
+  "contactCta": {
+    "subheading": "CONTACT US",
+    "heading": "GOT A QUESTION?",
+    "paragraph": "Need more information or have a specific question about our services? Our friendly team is ready to help. Reach out today, and we'll get back to you as soon as possible.",
+    "ctaText": "GET IN TOUCH",
+    "ctaLink": "/contact"
+  }
+}

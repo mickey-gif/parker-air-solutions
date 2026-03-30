@@ -1,0 +1,40 @@
+/* ============================================================
+   Parker Air Solutions — Brand Variables
+   ============================================================ */
+
+:root {
+
+  /* ---- Colors ---- */
+  --color-primary:    #2F92F7;
+  --color-primary-70: rgba(47, 146, 247, 0.7);
+  --color-primary-50: rgba(47, 146, 247, 0.5);
+
+  --color-dark:       #2d2d2d;
+  --color-dark-70:    rgba(45, 45, 45, 0.7);
+  --color-dark-50:    rgba(45, 45, 45, 0.5);
+  --color-dark-30:    rgba(45, 45, 45, 0.3);
+
+  --color-light:      #ffffff;
+  --color-light-70:   rgba(255, 255, 255, 0.7);
+  --color-light-50:   rgba(255, 255, 255, 0.5);
+
+  --color-grey:       #f4f4f4;
+  --color-grey-dark:  #e5e5e5;
+  --color-card-bg:    #ececec;
+
+  /* Gradient — decorative half-circle & phone button */
+  --gradient-brand: conic-gradient(from 180deg at 50% 50%, #FFBA70 -102.6deg, #FA2002 9deg, #64CDED 117deg, #FFBA70 257.4deg, #FA2002 369deg);
+
+  /* ---- Typography ---- */
+  --h--font-family:   'Open Sans', sans-serif;
+  --sh--font-family:  'Open Sans', sans-serif;
+  --p--font-family:   'Open Sans', sans-serif;
+
+  /* ---- Letter Spacing ---- */
+  --tracking-tight:   -0.01em;
+  --tracking-normal:   0;
+  --tracking-wide:     0.05em;
+  --tracking-wider:    0.1em;
+  --tracking-widest:   0.15em;
+
+}
