@@ -1,0 +1,138 @@
+/* 
+  Responsive Flex Columns Framework 
+  ---------------------------------
+  Logic:
+  - Flex wrapping container with gap.
+  - Columns use width calculation: (100% - (N-1)*gap) / N
+  - Variables update at breakpoints to change N (columns per row).
+  - Variables are defined locally on .flex-grid to ensure they use the local --gap context.
+*/
+
+/* The Grid Container */
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  
+  /* 1. Set Default Gap */
+  --gap: var(--space-m);
+  gap: var(--gap);
+
+  /* 2. Define Calculations Locally (so they use the local --gap) */
+  --width-100: 100%;
+  --width-50: calc((100% - 1 * var(--gap)) / 2);
+  --width-33: calc((100% - 2 * var(--gap)) / 3);
+  --width-25: calc((100% - 3 * var(--gap)) / 4);
+  --width-20: calc((100% - 4 * var(--gap)) / 5);
+  --width-16: calc((100% - 5 * var(--gap)) / 6);
+
+  /* Additional requested widths */
+  --width-75: calc(((100% - 1 * var(--gap)) * 0.75)); 
+  --width-70: calc(((100% - 1 * var(--gap)) * 0.70));
+  --width-66: calc(((100% - 1 * var(--gap)) * 0.66667));
+  --width-60: calc(((100% - 1 * var(--gap)) * 0.60));
+  --width-40: calc(((100% - 1 * var(--gap)) * 0.40));
+  --width-30: calc(((100% - 1 * var(--gap)) * 0.30));
+}
+
+/* Combo Class for centering */
+.flex-grid.is-centered {
+  justify-content: center;
+}
+
+/* Gap Utilities (Modes) 
+   These set the --gap variable, which the column calculations below rely on.
+   Usage: <div class="flex-grid gap-l">
+*/
+.gap-xxl { --gap: var(--space-xxl); }
+.gap-xl  { --gap: var(--space-xl); }
+.gap-l   { --gap: var(--space-l); }
+.gap-m   { --gap: var(--space-m); }
+.gap-s   { --gap: var(--space-s); }
+.gap-xs  { --gap: var(--space-xs); }
+.gap-xxs { --gap: var(--space-xxs); }
+.gap-0   { --gap: 0px; }
+
+
+/* Breakpoint: 1100px (Tablet Landscape / Small Desktop) */
+@media (max-width: 1100px) {
+  .flex-grid {
+    /* col-50 drops to 100% */
+    --width-50: 100%;
+    
+    /* Custom percentage columns all drop to 100% below 1100px per request */
+    --width-75: 100%;
+    --width-70: 100%;
+    --width-66: 100%;
+    --width-60: 100%;
+    --width-40: 100%;
+    --width-30: 100%;
+    
+    /* col-33 drops to 50% */
+    --width-33: calc((100% - 1 * var(--gap)) / 2);
+    
+    /* col-25 drops to 50% */
+    --width-25: calc((100% - 1 * var(--gap)) / 2);
+    
+    /* col-20 drops to 33.33% */
+    --width-20: calc((100% - 2 * var(--gap)) / 3);
+    
+    /* col-16 drops to 25% */
+    --width-16: calc((100% - 3 * var(--gap)) / 4);
+  }
+}
+
+/* Breakpoint: 768px (Tablet Portrait / Mobile Landscape) */
+@media (max-width: 768px) {
+  .flex-grid {
+    /* col-33 drops to 100% */
+    --width-33: 100%;
+    
+    /* col-25 drops to 50% */
+    --width-25: calc((100% - 1 * var(--gap)) / 2);
+
+    /* col-20 drops to 50% */
+    --width-20: calc((100% - 1 * var(--gap)) / 2);
+    
+    /* col-16 drops to 33.33% */
+    --width-16: calc((100% - 2 * var(--gap)) / 3);
+  }
+}
+
+/* Breakpoint: 479px (Mobile Portrait) */
+@media (max-width: 479px) {
+  .flex-grid {
+    /* Everything typically goes to 100% here */
+    --width-25: 100%;
+    --width-20: 100%;
+    
+    /* col-16 drops to 50% */
+    --width-16: calc((100% - 1 * var(--gap)) / 2);
+  }
+}
+
+
+/* Utility Classes */
+.col-100 { width: var(--width-100); }
+.col-50  { width: var(--width-50); }
+.col-33  { width: var(--width-33); }
+.col-25  { width: var(--width-25); }
+.col-20  { width: var(--width-20); }
+.col-16  { width: var(--width-16); }
+
+/* Custom Percentage Classes */
+.col-75  { width: var(--width-75); }
+.col-70  { width: var(--width-70); }
+.col-66  { width: var(--width-66); }
+.col-60  { width: var(--width-60); }
+.col-40  { width: var(--width-40); }
+.col-30  { width: var(--width-30); }
+
+/* Helper to visualize gaps */
+.col-content {
+  background-color: var(--color-primary-30);
+  border: 1px solid var(--color-primary);
+  padding: var(--space-s);
+  height: 100%;
+  border-radius: var(--space-xs);
+}

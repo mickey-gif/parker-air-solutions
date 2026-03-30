@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Structure Demo</title>
+  <link rel="stylesheet" href="variables.css">
+  <link rel="stylesheet" href="flex-columns.css">
+  <link rel="stylesheet" href="page-structure.css">
+  <style>
+    /* Visual Helpers */
+    body {
+      background-color: var(--color-light);
+      color: var(--color-dark);
+    }
+    
+    .placeholder-img {
+      width: 100%;
+      height: 300px;
+      background-color: var(--color-tertiary-30);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--space-xs);
+    }
+
+    .placeholder-text {
+      padding: var(--space-m);
+      background: white;
+      border-radius: var(--space-xs);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+
+    .hero-bg {
+      background-color: var(--color-primary-70);
+      color: white;
+    }
+    
+    .box-label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: yellow;
+      color: black;
+      font-size: 10px;
+      padding: 2px 4px;
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 
+    1. Page Wrapper 
+    Use 'allow-sticky' if you have sticky elements inside 
+  -->
+  <div class="page-wrapper allow-sticky">
+
+    <!-- 
+      2. Section (Hero) 
+      Mode: XXL padding 
+    -->
+    <section class="section section-xxl hero-bg">
+      <span class="box-label">Section XXL</span>
+      
+      <!-- Absolute Decoration Example -->
+      <div class="absolute-decoration absolute-top-right" style="width: 200px; height: 200px; background: rgba(255,255,255,0.1); border-radius: 0 0 0 100%;"></div>
+
+      <!-- 
+        3. Container 
+        Mode: L 
+      -->
+      <div class="container container-l">
+        <span class="box-label">Container L</span>
+        
+        <!-- 
+          4. Fluid Flex System (Grid) 
+        -->
+        <div class="flex-grid" style="align-items: center;">
+          
+          <!-- Left Column: Text -->
+          <div class="col-50 overlap-over">
+            <div class="content-wrapper">
+              <h1 style="font-size: var(--heading-xl);">Structuring Content into Boxes</h1>
+              <p style="font-size: var(--text-l);">The "Box Model" analysis allows us to break down any Figma design into logical, responsive components.</p>
+              <button style="padding: var(--space-s) var(--space-m); background: white; border: none; border-radius: 4px;">Learn More</button>
+            </div>
+          </div>
+
+          <!-- Right Column: Image with Negative Margin Overlap -->
+          <!-- Example: This col-66 sits next to col-50 but pulls back 16.66% to go under/behind -->
+          <div class="col-66 overlap-left-16 overlap-under">
+            <div class="placeholder-img" style="background-color: var(--color-tertiary); opacity: 0.8;">
+              Image (Underlaps Text)
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+      Section: Sticky Scroll Example 
+    -->
+    <section class="section section-l">
+      <div class="container container-l">
+        <div class="flex-grid">
+          
+          <!-- Sticky Sidebar -->
+          <div class="col-33">
+            <div class="sticky-content placeholder-text" style="border-left: 4px solid var(--color-primary);">
+              <h3>Sticky Header</h3>
+              <p>This element stays fixed while you scroll the content on the right.</p>
+            </div>
+          </div>
+
+          <!-- Scrolling Content -->
+          <div class="col-66">
+            <div class="content-wrapper">
+              <div class="placeholder-text" style="height: 400px; margin-bottom: var(--space-m);">Scroll Content Block 1</div>
+              <div class="placeholder-text" style="height: 400px; margin-bottom: var(--space-m);">Scroll Content Block 2</div>
+              <div class="placeholder-text" style="height: 400px;">Scroll Content Block 3</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+      Section: Nested Grid Example 
+    -->
+    <section class="section section-m" style="background-color: var(--color-grey);">
+      <div class="container container-m">
+        <h2 style="text-align: center; margin-bottom: var(--space-l);">Nested Fluid Grids</h2>
+        
+        <div class="flex-grid">
+          <div class="col-100">
+            <div class="placeholder-text" style="text-align: center;">
+              <h3>Main Feature</h3>
+              <p>Some main content here.</p>
+              
+              <!-- Nested Grid for Buttons/Icons -->
+              <div class="flex-grid is-centered" style="margin-top: var(--space-m); --gap: var(--space-s);">
+                <div class="col-25" style="background: #ddd; padding: 10px;">Icon 1</div>
+                <div class="col-25" style="background: #ddd; padding: 10px;">Icon 2</div>
+                <div class="col-25" style="background: #ddd; padding: 10px;">Icon 3</div>
+                <div class="col-25" style="background: #ddd; padding: 10px;">Icon 4</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

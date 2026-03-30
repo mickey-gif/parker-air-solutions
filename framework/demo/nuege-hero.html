@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NuEge Hero Reconstruction (Refactored)</title>
+  <link rel="stylesheet" href="variables.css">
+  <link rel="stylesheet" href="flex-columns.css">
+  <link rel="stylesheet" href="page-structure.css">
+  <link rel="stylesheet" href="typography.css">
+  <style>
+    /* 
+      Refactored Component Styles
+      Only adding overrides here.
+    */
+    
+    .hero {
+      background-color: var(--color-primary);
+      color: var(--color-light);
+    }
+
+    /* Using combo class for layout specific needs that utilities don't cover */
+    .hero__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      gap: var(--space-m);
+    }
+
+    /* Combo classes for specific overrides */
+    .hero__title {
+      color: var(--color-light); /* Explicit override if needed, or inherit */
+    }
+
+    .hero__text {
+      color: var(--color-light-70);
+      max-width: 60ch;
+    }
+
+    .hero__actions {
+      display: flex;
+      gap: var(--space-s);
+    }
+
+    .hero__image-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero__image {
+      width: 100%;
+      height: auto;
+      border-radius: var(--space-s);
+      background: rgba(255,255,255,0.1);
+      min-height: 400px;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      padding: var(--space-s) var(--space-m);
+      border-radius: 5rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      font-family: var(--font-secondary);
+    }
+
+    .btn--primary {
+      background-color: var(--color-secondary);
+      color: var(--color-light);
+    }
+
+    .btn--outline {
+      border: 1px solid var(--color-light);
+      color: var(--color-light);
+    }
+
+    /* Absolute Decorations */
+    .hero__shape-1 {
+      width: 30vw;
+      height: 30vw;
+      background: radial-gradient(circle, var(--color-secondary-30) 0%, transparent 70%);
+      border-radius: 50%;
+      top: -10%;
+      right: -5%;
+      filter: blur(40px);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-wrapper">
+
+    <!-- Nav -->
+    <nav kilr-nav="nav" style="background: var(--color-primary); padding: var(--space-s); color: white;">
+      <div class="container-l" style="display: flex; justify-content: space-between;">
+        <div>NuEdge Logo</div>
+        <div>Menu</div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <!-- 
+      Corrected Approach:
+      1. Utility Class for sizing: .section-xxl
+      2. Component Class for specific styling: .hero
+    -->
+    <section class="section-xxl hero">
+      
+      <div class="absolute-decoration hero__shape-1"></div>
+
+      <!-- 
+        Corrected Approach:
+        1. Utility Class for width: .container-l 
+        No redundant 'container' class needed if container-l handles it all.
+      -->
+      <div class="container-l">
+        
+        <!-- 
+          Added .gap-m utility to explicitly set the gap mode.
+          The .col-50 calculation will now use --space-m for its math.
+        -->
+        <div class="flex-grid gap-m" style="align-items: center;">
+          
+          <!-- Text Column -->
+          <div class="col-50">
+            <div class="hero__content" kilr-animation="fade-up">
+              
+              <!-- 
+                Corrected Approach:
+                1. Utility Class for font size: .heading-xxl
+                2. Combo Class for specific overrides (color): .hero__title
+              -->
+              <h1 class="heading-xxl hero__title">
+                Custom Liquid Nutrition & Agronomy Experts
+              </h1>
+              
+              <!-- 
+                Corrected Approach:
+                1. Utility Class for font size: .paragraph-l
+                2. Combo Class for specific overrides: .hero__text
+              -->
+              <p class="paragraph-l hero__text">
+                Nu Edge delivers custom-formulated liquid nutrition and expert agronomy services to maximise your crop yields.
+              </p>
+              
+              <div class="hero__actions">
+                <a href="#" class="btn btn--primary">Contact Us</a>
+                <a href="#" class="btn btn--outline">Our Services</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image Column -->
+          <div class="col-50">
+            <div class="hero__image-wrapper" kilr-animation="fade-in">
+              <div class="hero__image">
+                <div style="display: flex; align-items: center; justify-content: center; height: 100%; color: rgba(255,255,255,0.5);">
+                  [Hero Image Asset]
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script>
+    // Animation Shim
+    document.addEventListener('DOMContentLoaded', () => {
+      const anims = document.querySelectorAll('[kilr-animation]');
+      anims.forEach(el => {
+        el.style.opacity = '0';
+        setTimeout(() => { el.style.opacity = '1'; el.style.transition = 'opacity 1s'; }, 300);
+      });
+    });
+  </script>
+
+</body>
+</html>

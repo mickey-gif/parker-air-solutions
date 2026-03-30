@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attributes & Naming Demo</title>
+  <link rel="stylesheet" href="variables.css">
+  <style>
+    body {
+      padding: var(--space-l);
+      font-family: var(--font-secondary);
+      background-color: var(--color-light);
+      color: var(--color-dark);
+    }
+
+    /* Utility for toggle demo */
+    .is-hidden {
+      display: none;
+    }
+
+    .box {
+      padding: var(--space-m);
+      border: 1px solid var(--color-grey);
+      margin-top: var(--space-s);
+      background: white;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: var(--space-s) var(--space-m);
+      background-color: var(--color-primary);
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: var(--font-secondary);
+    }
+    
+    button:hover {
+      background-color: var(--color-primary-70);
+    }
+  </style>
+</head>
+<body>
+
+  <div style="max-width: var(--container-m); margin: 0 auto;">
+    <h1 style="margin-bottom: var(--space-m);">Attributes Demo</h1>
+    <p style="margin-bottom: var(--space-l);">This page demonstrates the separation of concerns: BEM for styling, KILR Attributes for JS behavior.</p>
+
+    <!-- Toggle Example -->
+    <div class="toggle-demo">
+      <h2>Toggle Function</h2>
+      <p>Click the button to toggle the box below. The script targets <code>kilr-toggle-trigger</code> and <code>kilr-toggle-target</code>.</p>
+      
+      <button kilr-toggle-trigger="info-box" aria-expanded="false">
+        Toggle Info Box
+      </button>
+
+      <div kilr-toggle-target="info-box" class="box is-hidden">
+        <h3 style="color: var(--color-secondary);">Hidden Content Revealed!</h3>
+        <p>This visibility is controlled by the attribute script, not by unique ID styling.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Load Scripts -->
+  <script src="../scripts/attributes/toggle.js"></script>
+</body>
+</html>

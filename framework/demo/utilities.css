@@ -1,0 +1,46 @@
+/* 
+  KILR Framework Utilities 
+  ------------------------
+*/
+
+/* --- Text Colors --- */
+.text-white { color: var(--color-light); }
+.text-dark { color: var(--color-dark); }
+.text-primary { color: var(--color-primary); }
+
+/* --- Flexbox Alignment (Parent) --- */
+.items-center { align-items: center; }
+.items-start { align-items: flex-start; }
+.items-end { align-items: flex-end; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+
+/* --- Content Flow (Children) --- */
+/* Used for 'Content Wrapper' elements to stack text vertically */
+.content-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s); /* Default text gap */
+}
+
+/* --- Truncation --- */
+.truncate-1 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+}
+
+.truncate-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+}
+
+.truncate-3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+}

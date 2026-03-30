@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generic Layered Hero Pattern</title>
+  <link rel="stylesheet" href="variables.css">
+  <link rel="stylesheet" href="flex-columns.css">
+  <link rel="stylesheet" href="page-structure.css">
+  <link rel="stylesheet" href="typography.css">
+  <style>
+    /* 
+      This is a template for the "Layered Hero" pattern derived from 
+      Visual Deconstruction logic:
+      
+      Observation: "I see a background image, a dark overlay, AND a full width top bar."
+      Strategy: Layered Backgrounds + Dual Container.
+    */
+
+    .hero-template {
+      position: relative;
+      color: white;
+      background-color: #333; /* Fallback */
+      overflow: hidden;
+    }
+
+    /* Layer 1: Base Image */
+    .bg-image {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: 0;
+      object-fit: cover;
+      opacity: 0.5; /* Example overlay effect */
+    }
+
+    /* Layer 2: Gradient/Mask */
+    .bg-overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: 1;
+      background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.8));
+    }
+
+    /* Content needs Z-Index to sit on top */
+    .container-full, .container-l {
+      position: relative;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Section Wrapper -->
+  <section class="section-xxl hero-template">
+    
+    <!-- STRATEGY: Background Layering -->
+    <div class="bg-image" style="background: url('https://via.placeholder.com/1920x1080') center/cover;"></div>
+    <div class="bg-overlay"></div>
+
+    <!-- STRATEGY: Dual Container Pattern -->
+    
+    <!-- Container 1: Full Width Context (e.g. Navbar) -->
+    <div class="container-full" style="margin-bottom: var(--space-xl);">
+      <div class="container-l" style="display: flex; justify-content: space-between;">
+        <div>LOGO AREA</div>
+        <div>NAV AREA</div>
+      </div>
+    </div>
+
+    <!-- Container 2: Main Content -->
+    <div class="container-l">
+      <div class="flex-grid gap-l" style="align-items: center;">
+        
+        <!-- Standard Grid Strategy -->
+        <div class="col-50">
+          <h1 class="heading-xxl">Visual Deconstruction</h1>
+          <p class="paragraph-l">
+            This template exists because we asked: "How many layers are there?" and "How is the content constrained?"
+          </p>
+        </div>
+        
+        <div class="col-50">
+          <!-- Visual/Action -->
+          <div style="background: rgba(255,255,255,0.1); border: 1px solid white; height: 300px; display: flex; align-items: center; justify-content: center;">
+            Visual Area
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>

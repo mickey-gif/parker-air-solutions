@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fluid Sizing Framework Demo</title>
+  <link rel="stylesheet" href="variables.css">
+  <style>
+    /* Helper classes for demo */
+    .container {
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #f0f0f0;
+      border: 1px dashed #ccc;
+      margin-bottom: var(--space-m);
+      padding: var(--space-s);
+      text-align: center;
+    }
+
+    .section-demo {
+      background-color: var(--color-6);
+      margin-bottom: var(--space-l);
+      border: 1px solid #ddd;
+    }
+
+    .box {
+      background-color: var(--color-4);
+      color: white;
+      display: inline-block;
+      margin-right: var(--space-s);
+      margin-bottom: var(--space-s);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Section Padding Demo -->
+  <section class="section-demo" style="padding-top: var(--section-xxl); padding-bottom: var(--section-xxl);">
+    <div style="max-width: var(--container-m); margin: 0 auto; text-align: center;">
+      <h1 style="font-size: var(--heading-xxl);">Fluid Sizing Framework</h1>
+      <p style="font-size: var(--text-xl); margin-top: var(--space-m);">Demo of fluid typography, spacing, and containers.</p>
+    </div>
+  </section>
+
+  <!-- Headings Demo -->
+  <div style="max-width: var(--container-l); margin: 0 auto; padding: var(--space-l);">
+    <h2 style="font-size: var(--heading-xl);">Heading Scale</h2>
+    <hr style="margin: var(--space-m) 0;">
+    <h1 style="font-size: var(--heading-xxl);">Heading XXL</h1>
+    <h2 style="font-size: var(--heading-xl);">Heading XL</h2>
+    <h3 style="font-size: var(--heading-l);">Heading L</h3>
+    <h4 style="font-size: var(--heading-m);">Heading M</h4>
+    <h5 style="font-size: var(--heading-s);">Heading S</h5>
+    <h6 style="font-size: var(--heading-xs);">Heading XS</h6>
+  </div>
+
+  <!-- Paragraphs Demo -->
+  <div style="max-width: var(--container-l); margin: 0 auto; padding: var(--space-l);">
+    <h2 style="font-size: var(--heading-xl);">Paragraph Scale</h2>
+    <hr style="margin: var(--space-m) 0;">
+    <p style="font-size: var(--text-xxl);">Text XXL: The quick brown fox jumps over the lazy dog.</p>
+    <p style="font-size: var(--text-xl);">Text XL: The quick brown fox jumps over the lazy dog.</p>
+    <p style="font-size: var(--text-l);">Text L: The quick brown fox jumps over the lazy dog.</p>
+    <p style="font-size: var(--text-m);">Text M: The quick brown fox jumps over the lazy dog.</p>
+    <p style="font-size: var(--text-s);">Text S: The quick brown fox jumps over the lazy dog.</p>
+    <p style="font-size: var(--text-xs);">Text XS: The quick brown fox jumps over the lazy dog.</p>
+  </div>
+
+  <!-- Spacing Demo -->
+  <div style="max-width: var(--container-l); margin: 0 auto; padding: var(--space-l);">
+    <h2 style="font-size: var(--heading-xl);">Spacing Scale</h2>
+    <hr style="margin: var(--space-m) 0;">
+    <div>
+      <div class="box" style="width: var(--space-xxl); height: var(--space-xxl);">XXL</div>
+      <div class="box" style="width: var(--space-xl); height: var(--space-xl);">XL</div>
+      <div class="box" style="width: var(--space-l); height: var(--space-l);">L</div>
+      <div class="box" style="width: var(--space-m); height: var(--space-m);">M</div>
+      <div class="box" style="width: var(--space-s); height: var(--space-s);">S</div>
+      <div class="box" style="width: var(--space-xs); height: var(--space-xs);">XS</div>
+      <div class="box" style="width: var(--space-xxs); height: var(--space-xxs);">XXS</div>
+    </div>
+  </div>
+
+  <!-- Containers Demo -->
+  <div style="padding: var(--space-l) 0;">
+    <div class="container" style="width: var(--container-xxl);">Container XXL</div>
+    <div class="container" style="width: var(--container-xl);">Container XL</div>
+    <div class="container" style="width: var(--container-l);">Container L</div>
+    <div class="container" style="width: var(--container-m);">Container M</div>
+    <div class="container" style="width: var(--container-s);">Container S</div>
+  </div>
+
+  <!-- Section Padding Demo Visualization -->
+  <div style="max-width: var(--container-l); margin: 0 auto;">
+    <h2 style="font-size: var(--heading-xl);">Section Padding Scale</h2>
+    <div style="background: #eee; margin-bottom: 1rem; padding-top: var(--section-xxl); padding-bottom: var(--section-xxl); border: 1px solid #999;">Section XXL</div>
+    <div style="background: #eee; margin-bottom: 1rem; padding-top: var(--section-xl); padding-bottom: var(--section-xl); border: 1px solid #999;">Section XL</div>
+    <div style="background: #eee; margin-bottom: 1rem; padding-top: var(--section-l); padding-bottom: var(--section-l); border: 1px solid #999;">Section L</div>
+    <div style="background: #eee; margin-bottom: 1rem; padding-top: var(--section-m); padding-bottom: var(--section-m); border: 1px solid #999;">Section M</div>
+    <div style="background: #eee; margin-bottom: 1rem; padding-top: var(--section-s); padding-bottom: var(--section-s); border: 1px solid #999;">Section S</div>
+  </div>
+
+</body>
+</html>
+
+

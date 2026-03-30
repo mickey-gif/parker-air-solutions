@@ -1,0 +1,12 @@
+name = "kilr-studios"
+compatibility_date = "2024-09-23"
+pages_build_output_dir = "."
+
+[[d1_databases]]
+binding = "DB"
+database_name = "kilr-studios-cms"
+database_id = "4d849aaa-de99-4155-9acc-b688d3aba6c7"
+
+[[r2_buckets]]
+binding = "MEDIA"
+bucket_name = "kilr-studios-media"

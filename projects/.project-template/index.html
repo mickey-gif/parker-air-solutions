@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[Project Name] - [Tagline]</title>
+  <meta name="description" content="[Meta description]">
+
+  <!-- KILR Framework -->
+  <link rel="stylesheet" href="../../framework/dist/kilr-framework.css">
+
+  <!-- Project Styles -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- <link href="https://fonts.googleapis.com/css2?family=FONT_HERE:wght@400;600;700&display=swap" rel="stylesheet"> -->
+</head>
+<body>
+
+  <!-- ============================================
+       NAVIGATION (Exception: uses kilr-nav system, not framework layout)
+       See .cursor/practices/patterns/navigation.mdc
+       ============================================ -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation" kilr-nav="nav">
+    <div class="container-xl">
+      <div class="navbar_wrapper">
+        <a href="#" class="navbar_brand">
+          <img src="images/logo.svg" alt="[Company Name]" class="navbar_logo">
+        </a>
+
+        <ul class="navbar_menu" role="list">
+          <li class="navbar_item">
+            <a href="#home" class="navbar_link">Home</a>
+          </li>
+          <li class="navbar_item">
+            <a href="#services" class="navbar_link">Services</a>
+          </li>
+          <li class="navbar_item">
+            <a href="#about" class="navbar_link">About</a>
+          </li>
+          <li class="navbar_item">
+            <a href="#contact" class="navbar_link">Contact</a>
+          </li>
+        </ul>
+
+        <button class="navbar_cta">
+          Get Started
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================
+       HERO SECTION
+       L1: section-xl (framework) + hero_bg (custom background combo)
+       L2: container-xl
+       L5+: content_hero, hero_* (custom classes start here)
+       ============================================ -->
+  <section class="section-xl hero_bg">
+    <div class="container-xl">
+      <div class="content_hero">
+        <h1 class="heading-xxl">Your Main Headline Here</h1>
+        <p class="paragraph-m">Your compelling subheading that describes what you do and why visitors should care.</p>
+        <a href="#contact" class="hero_button">Call to Action</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       EXAMPLE: Two-Column Section
+       L1: section-l
+       L2: container-xl
+       L3: flex-grid gap-m
+       L4: col-50 (x2)
+       L5+: content_* custom classes
+       ============================================ -->
+  <!--
+  <section class="section-l">
+    <div class="container-xl">
+      <div class="flex-grid gap-m">
+        <div class="col-50">
+          <div class="content_about">
+            <h2 class="heading-l">Section Heading</h2>
+            <p class="paragraph-m">Section content goes here.</p>
+          </div>
+        </div>
+        <div class="col-50">
+          <img src="images/placeholder.jpg" alt="Description" class="about_image">
+        </div>
+      </div>
+    </div>
+  </section>
+  -->
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="section-s footer_bg">
+    <div class="container-xl">
+      <p class="paragraph-s">&copy; 2026 [Company Name]. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <!-- <script src="../../kilr-js-libraries/nav.js"></script> -->
+  <!-- <script src="../../kilr-js-libraries/slider.js"></script> -->
+
+</body>
+</html>

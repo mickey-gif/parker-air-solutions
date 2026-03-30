@@ -1,0 +1,515 @@
+:root {
+  /* ------------------------------------------------------------
+     1. FLUID SIZING (XXL to XXS)
+     ------------------------------------------------------------ */
+
+  /* Container Widths */
+  --container-xxl: clamp(19.4rem, 0.5rem + 94.5vw, 95rem);
+  --container-xl: clamp(18.49rem, 2.886rem + 78.02vw, 80.91rem);
+  --container-l: clamp(17.62rem, 4.796rem + 64.12vw, 68.92rem);
+  --container-m: clamp(16.79rem, 6.312rem + 52.39vw, 58.7rem);
+  --container-s: clamp(16rem, 7.5rem + 42.5vw, 50rem);
+  --container-xs: clamp(10rem, 5rem + 25vw, 30rem); /* Placeholder for xs if needed */
+  --container-xxs: clamp(8rem, 4rem + 20vw, 20rem); /* Placeholder for xxs if needed */
+
+  /* Headings */
+  --heading-xxl: clamp(2.42rem, 1.972rem + 2.24vw, 4.21rem);
+  --heading-xl: clamp(1.97rem, 1.672rem + 1.49vw, 3.16rem);
+  --heading-l: clamp(1.6rem, 1.408rem + 0.96vw, 2.37rem);
+  --heading-m: clamp(1.3rem, 1.18rem + 0.6vw, 1.78rem);
+  --heading-s: clamp(1.06rem, 0.992rem + 0.34vw, 1.33rem);
+  --heading-xs: clamp(0.86rem, 0.824rem + 0.18vw, 1rem);
+  --heading-xxs: clamp(0.75rem, 0.75rem + 0vw, 0.75rem); /* Placeholder/Inferred */
+
+  /* Sub-Headings */
+  --sub-heading-xxl: clamp(2.42rem, 1.972rem + 2.24vw, 4.21rem);
+  --sub-heading-xl:  clamp(1.97rem, 1.672rem + 1.49vw, 3.16rem);
+  --sub-heading-l:   clamp(1.6rem, 1.408rem + 0.96vw, 2.37rem);
+  --sub-heading-m:   clamp(1.3rem, 1.18rem + 0.6vw, 1.78rem);
+  --sub-heading-s:   clamp(1.06rem, 0.992rem + 0.34vw, 1.33rem);
+  --sub-heading-xs:  clamp(0.86rem, 0.824rem + 0.18vw, 1rem);
+
+  /* Paragraph / Text */
+  --text-xxl: clamp(1.54rem, 1.458rem + 0.41vw, 1.87rem);
+  --text-xl: clamp(1.33rem, 1.272rem + 0.29vw, 1.56rem);
+  --text-l: clamp(1.16rem, 1.124rem + 0.18vw, 1.3rem);
+  --text-m: clamp(1rem, 0.98rem + 0.1vw, 1.08rem);
+  --text-s: clamp(0.87rem, 0.862rem + 0.04vw, 0.9rem);
+  --text-xs: clamp(0.75rem, 0.75rem + 0vw, 0.75rem);
+  --text-xxs: clamp(0.65rem, 0.65rem + 0vw, 0.65rem); /* Placeholder */
+
+  /* Spacing (Padding, Margin, Gap) */
+  --space-xxl: clamp(5.26rem, 4.37rem + 4.45vw, 8.82rem);
+  --space-xl: clamp(3.95rem, 3.378rem + 2.86vw, 6.24rem);
+  --space-l: clamp(2.96rem, 2.598rem + 1.81vw, 4.41rem);
+  --space-m: clamp(2.22rem, 1.996rem + 1.12vw, 3.12rem);
+  --space-s: clamp(1.67rem, 1.534rem + 0.68vw, 2.21rem);
+  --space-xs: clamp(1.25rem, 1.172rem + 0.39vw, 1.56rem);
+  --space-xxs: clamp(0.56rem, 0.496rem + 0.32vw, 0.82rem);
+  --space-xxxs: clamp(0.38rem, 0.348rem + 0.16vw, 0.51rem); /* Additional smaller size */
+  --space-tiny: clamp(0.25rem, 0.234rem + 0.08vw, 0.3125rem); /* Smallest */
+
+  /* Section Padding (Top/Bottom) */
+  --section-xxl: clamp(7.01rem, 5.644rem + 6.83vw, 12.47rem);
+  --section-xl: clamp(2.85rem, 2.16rem + 3.45vw, 5.61rem);
+  --section-l: clamp(1.9rem, 1.508rem + 1.96vw, 3.47rem);
+  --section-m: clamp(1.27rem, 1.052rem + 1.09vw, 2.14rem);
+  --section-s: clamp(0.84rem, 0.72rem + 0.6vw, 1.32rem);
+  --section-xs: clamp(0.5rem, 0.5rem + 0.2vw, 0.75rem); /* Placeholder */
+  --section-xxs: clamp(0.25rem, 0.25rem + 0.1vw, 0.5rem); /* Placeholder */
+
+
+  /* ------------------------------------------------------------
+     2. BRAND VARIABLES (Colors)
+     ------------------------------------------------------------ */
+  
+  /* Color Palette Defaults (based on provided rgba values) */
+  
+  /* Primary */
+  --color-primary: rgba(16, 68, 42, 1);
+  --color-primary-70: rgba(16, 68, 42, 0.7);
+  --color-primary-50: rgba(16, 68, 42, 0.5);
+  --color-primary-30: rgba(16, 68, 42, 0.3);
+
+  /* Secondary */
+  --color-secondary: rgba(77, 152, 79, 1);
+  --color-secondary-70: rgba(77, 152, 79, 0.7);
+  --color-secondary-50: rgba(77, 152, 79, 0.5);
+  --color-secondary-30: rgba(77, 152, 79, 0.3);
+
+  /* Tertiary */
+  --color-tertiary: rgba(12, 34, 59, 1);
+  --color-tertiary-70: rgba(12, 34, 59, 0.7);
+  --color-tertiary-50: rgba(12, 34, 59, 0.5);
+  --color-tertiary-30: rgba(12, 34, 59, 0.3);
+
+  /* Dark */
+  --color-dark: rgba(17, 17, 17, 1);
+  --color-dark-70: rgba(17, 17, 17, 0.7);
+  --color-dark-50: rgba(17, 17, 17, 0.5);
+  --color-dark-30: rgba(17, 17, 17, 0.3);
+
+  /* Light */
+  --color-light: rgba(253, 253, 253, 1);
+  --color-light-70: rgba(253, 253, 253, 0.7);
+  --color-light-50: rgba(253, 253, 253, 0.5);
+  --color-light-30: rgba(253, 253, 253, 0.3);
+
+  /* Additional colors found in original list, potentially useful */
+  --color-accent-blue: rgba(22, 99, 187, 1);
+  --color-grey: rgba(222, 224, 228, 1);
+
+  /* Fonts — override these in variables.css per project */
+  --h--font-family:  "tt fors trial variable", sans-serif;
+  --sh--font-family: "tt fors trial variable", sans-serif;
+  --p--font-family:  "inter-variable", sans-serif;
+}
+
+/* Reset/Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--p--font-family);
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+/* 
+  Page Structuring Framework 
+  --------------------------
+  Hierarchy: Page Wrapper > Section > Container > Layout Grid > Content Wrapper
+*/
+
+/* 1. Page Wrapper */
+.page-wrapper {
+  width: 100%;
+  /* Prevents horizontal scroll, but breaks sticky positioning */
+  overflow: hidden; 
+  position: relative;
+}
+
+/* Combo class to allow sticky positioning */
+.page-wrapper.allow-sticky {
+  overflow: visible;
+}
+
+
+/* 2. Sections */
+/* 
+   Sections use the --section variable which changes based on mode.
+   For CSS implementation, we simulate "Modes" using classes or data-attributes
+   since native CSS variables don't have "modes" like Webflow.
+   Here, the base .section class applies the padding variable.
+   
+   Note: In Webflow, you'd set the 'Section' variable on the element and change the mode.
+   Here, we assume the variable --section-padding is set by a utility class or default.
+*/
+
+.section {
+  width: 100%;
+  position: relative; /* For absolute positioned elements */
+  
+  /* Default Padding */
+  padding-top: var(--section-l);
+  padding-bottom: var(--section-l);
+}
+
+/* Section Size Modifiers (Simulating Modes) */
+.section-xxl { padding-top: var(--section-xxl); padding-bottom: var(--section-xxl); }
+.section-xl  { padding-top: var(--section-xl); padding-bottom: var(--section-xl); }
+.section-l   { padding-top: var(--section-l); padding-bottom: var(--section-l); }
+.section-m   { padding-top: var(--section-m); padding-bottom: var(--section-m); }
+.section-s   { padding-top: var(--section-s); padding-bottom: var(--section-s); }
+.section-xs  { padding-top: var(--section-xs); padding-bottom: var(--section-xs); }
+.section-xxs { padding-top: var(--section-xxs); padding-bottom: var(--section-xxs); }
+
+
+/* 3. Containers */
+/* 
+   Containers set the width based on the container variable.
+   Max-width is set to a percentage to prevent overflow on smaller screens.
+   Centered with auto margins.
+*/
+[class^="container-"], [class*=" container-"] {
+  width: 100%; /* Fallback */
+  max-width: 95%; /* Default desktop guard */
+  margin-left: auto;
+  margin-right: auto;
+  
+  /* Default horizontal padding to prevent touching edges if width hits 100% */
+  padding-left: var(--space-s); 
+  padding-right: var(--space-s);
+}
+
+@media (max-width: 768px) {
+  [class^="container-"], [class*=" container-"] {
+    max-width: 98%; /* Mobile/Tablet guard */
+  }
+}
+
+/* Container Size Modifiers */
+.container-max { width: var(--container-max); }
+.container-xxl { width: var(--container-xxl); }
+.container-xl  { width: var(--container-xl); }
+.container-l   { width: var(--container-l); }
+.container-m   { width: var(--container-m); }
+.container-s   { width: var(--container-s); }
+.container-xs  { width: var(--container-xs); }
+.container-xxs { width: var(--container-xxs); }
+
+
+/* 4. Content Wrapper */
+/* 
+   Generic wrapper for content elements. 
+   Often Flex or Grid.
+*/
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
+}
+
+
+/* ------------------------------------------------------------
+   Advanced / Edge Case Classes
+   ------------------------------------------------------------ */
+
+/* Absolute Decorative Elements */
+.absolute-decoration {
+  position: absolute;
+  z-index: 0; /* Behind content usually */
+  pointer-events: none; /* Don't block clicks */
+}
+
+.absolute-top-right { top: 0; right: 0; }
+.absolute-bottom-left { bottom: 0; left: 0; }
+
+/* Sticky Content (e.g. split screen scroll) */
+.sticky-content {
+  position: sticky;
+  top: var(--space-l); /* Sticky offset */
+  align-self: start;
+}
+
+/* Negative Margin Overlap Example (Hero Overlay) */
+/* 
+   Note: This usually requires specific context. 
+   Negative margin percent relates to the parent width.
+*/
+.overlap-left-16 {
+  margin-left: -16.667%;
+  z-index: 1; /* Ensure it sits on top or below as needed */
+  position: relative;
+}
+
+.overlap-under {
+  z-index: 0;
+}
+
+.overlap-over {
+  z-index: 2;
+}
+
+/* 
+  Responsive Flex Columns Framework 
+  ---------------------------------
+  Logic:
+  - Flex wrapping container with gap.
+  - Columns use width calculation mapping exactly to fractional widths.
+  - Variables are defined locally on .flex-grid to ensure they use the local --gap context.
+*/
+
+/* The Grid Container */
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  
+  /* 1. Set Default Gap */
+  --gap: var(--space-m);
+  gap: var(--gap);
+
+  /* 2. Define Calculations Locally */
+  --width-1-of-1: 100%;
+  --width-1-of-2: calc((100% - 1 * var(--gap)) / 2);
+  
+  --width-1-of-3: calc((100% - 2 * var(--gap)) / 3);
+  --width-2-of-3: calc((100% - 2 * var(--gap)) * 0.66666667 + var(--gap));
+  
+  --width-1-of-4: calc((100% - 3 * var(--gap)) / 4);
+  --width-2-of-4: calc((100% - 3 * var(--gap)) * 0.5 + var(--gap));
+  --width-3-of-4: calc((100% - 3 * var(--gap)) * 0.75 + 2 * var(--gap));
+  
+  --width-1-of-5: calc((100% - 4 * var(--gap)) / 5);
+  --width-2-of-5: calc((100% - 4 * var(--gap)) * 0.4 + var(--gap));
+  --width-3-of-5: calc((100% - 4 * var(--gap)) * 0.6 + 2 * var(--gap));
+  --width-4-of-5: calc((100% - 4 * var(--gap)) * 0.8 + 3 * var(--gap));
+  
+  --width-1-of-6: calc((100% - 5 * var(--gap)) / 6);
+  --width-5-of-6: calc((100% - 5 * var(--gap)) * 0.83333333 + 4 * var(--gap));
+}
+
+/* Combo Class for centering */
+.flex-grid.is-centered,
+.is-centered {
+  justify-content: center;
+}
+
+/* Gap Utilities — each row_gap-* class is a complete flex grid container */
+.row_gap-xxl,
+.row_gap-xl,
+.row_gap-l,
+.row_gap-m,
+.row_gap-s,
+.row_gap-xs,
+.row_gap-xxs,
+.row_gap-0 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  --width-1-of-1: 100%;
+  --width-1-of-2: calc((100% - 1 * var(--gap)) / 2);
+  --width-1-of-3: calc((100% - 2 * var(--gap)) / 3);
+  --width-2-of-3: calc((100% - 2 * var(--gap)) * 0.66666667 + var(--gap));
+  --width-1-of-4: calc((100% - 3 * var(--gap)) / 4);
+  --width-2-of-4: calc((100% - 3 * var(--gap)) * 0.5 + var(--gap));
+  --width-3-of-4: calc((100% - 3 * var(--gap)) * 0.75 + 2 * var(--gap));
+  --width-1-of-5: calc((100% - 4 * var(--gap)) / 5);
+  --width-2-of-5: calc((100% - 4 * var(--gap)) * 0.4 + var(--gap));
+  --width-3-of-5: calc((100% - 4 * var(--gap)) * 0.6 + 2 * var(--gap));
+  --width-4-of-5: calc((100% - 4 * var(--gap)) * 0.8 + 3 * var(--gap));
+  --width-1-of-6: calc((100% - 5 * var(--gap)) / 6);
+  --width-5-of-6: calc((100% - 5 * var(--gap)) * 0.83333333 + 4 * var(--gap));
+}
+
+.row_gap-xxl { --gap: var(--space-xxl); gap: var(--gap); }
+.row_gap-xl  { --gap: var(--space-xl); gap: var(--gap); }
+.row_gap-l   { --gap: var(--space-l); gap: var(--gap); }
+.row_gap-m   { --gap: var(--space-m); gap: var(--gap); }
+.row_gap-s   { --gap: var(--space-s); gap: var(--gap); }
+.row_gap-xs  { --gap: var(--space-xs); gap: var(--gap); }
+.row_gap-xxs { --gap: var(--space-xxs); gap: var(--gap); }
+.row_gap-0   { --gap: 0px; gap: var(--gap); }
+
+/* Breakpoint: 1100px (Tablet Landscape / Small Desktop) */
+@media (max-width: 1100px) {
+  .flex-grid,
+  .row_gap-xxl, .row_gap-xl, .row_gap-l, .row_gap-m,
+  .row_gap-s, .row_gap-xs, .row_gap-xxs, .row_gap-0 {
+    --width-1-of-3: calc((100% - 1 * var(--gap)) / 2);
+    --width-2-of-3: 100%;
+
+    --width-1-of-4: calc((100% - 1 * var(--gap)) / 2);
+    --width-2-of-4: 100%;
+    --width-3-of-4: 100%;
+
+    --width-1-of-5: calc((100% - 1 * var(--gap)) / 2);
+    --width-2-of-5: calc((100% - 1 * var(--gap)) / 2);
+    --width-3-of-5: 100%;
+    --width-4-of-5: 100%;
+
+    --width-1-of-6: calc((100% - 2 * var(--gap)) / 3);
+    --width-5-of-6: 100%;
+  }
+}
+
+/* Breakpoint: 991px (Tablet Portrait / Standard Tablet Breakpoint) */
+@media (max-width: 991px) {
+  .flex-grid,
+  .row_gap-xxl, .row_gap-xl, .row_gap-l, .row_gap-m,
+  .row_gap-s, .row_gap-xs, .row_gap-xxs, .row_gap-0 {
+    --width-1-of-2: 100%;
+
+    --width-1-of-3: 100%;
+
+    --width-1-of-4: calc((100% - 1 * var(--gap)) / 2);
+
+    --width-1-of-5: 100%;
+    --width-2-of-5: 100%;
+
+    --width-1-of-6: calc((100% - 1 * var(--gap)) / 2);
+  }
+}
+
+/* Breakpoint: 768px (Mobile Landscape) */
+@media (max-width: 768px) {
+  .flex-grid,
+  .row_gap-xxl, .row_gap-xl, .row_gap-l, .row_gap-m,
+  .row_gap-s, .row_gap-xs, .row_gap-xxs, .row_gap-0 {
+    --width-1-of-4: 100%;
+    --width-1-of-6: calc((100% - 1 * var(--gap)) / 2);
+  }
+}
+
+/* Breakpoint: 479px (Mobile Portrait) */
+@media (max-width: 479px) {
+  .flex-grid,
+  .row_gap-xxl, .row_gap-xl, .row_gap-l, .row_gap-m,
+  .row_gap-s, .row_gap-xs, .row_gap-xxs, .row_gap-0 {
+    --width-1-of-6: 100%;
+  }
+}
+
+/* Utility Classes */
+.col-1-of-1 { width: var(--width-1-of-1); }
+.col-1-of-2 { width: var(--width-1-of-2); }
+.col-1-of-3 { width: var(--width-1-of-3); }
+.col-2-of-3 { width: var(--width-2-of-3); }
+.col-1-of-4 { width: var(--width-1-of-4); }
+.col-2-of-4 { width: var(--width-2-of-4); }
+.col-3-of-4 { width: var(--width-3-of-4); }
+.col-1-of-5 { width: var(--width-1-of-5); }
+.col-2-of-5 { width: var(--width-2-of-5); }
+.col-3-of-5 { width: var(--width-3-of-5); }
+.col-4-of-5 { width: var(--width-4-of-5); }
+.col-1-of-6 { width: var(--width-1-of-6); }
+.col-5-of-6 { width: var(--width-5-of-6); }
+
+/* Helper to visualize gaps */
+.col-content {
+  background-color: var(--color-primary-30);
+  border: 1px solid var(--color-primary);
+  padding: var(--space-s);
+  height: 100%;
+  border-radius: var(--size-xs);
+}
+/* 
+  Typography Utilities
+  --------------------
+  These classes map directly to the fluid variables.
+*/
+
+/* Headings — uses --h--font-family. Can be applied to ANY element (h1, h2, p, span, etc.) */
+.heading-xxl { font-size: var(--heading-xxl); line-height: 0.9; }
+.heading-xl  { font-size: var(--heading-xl); line-height: 0.9; }
+.heading-l   { font-size: var(--heading-l); line-height: 0.9; }
+.heading-m   { font-size: var(--heading-m); line-height: 0.9; }
+.heading-s   { font-size: var(--heading-s); line-height: 0.9; }
+.heading-xs  { font-size: var(--heading-xs); line-height: 0.9; }
+.heading-xxs { font-size: var(--heading-xxs); line-height: 0.9; }
+
+[class*="heading-"] {
+  font-family: var(--h--font-family);
+}
+
+/* Sub-Headings — uses --sh--font-family (labels, eyebrows, section tags) */
+.sub-heading-xxl { font-size: var(--sub-heading-xxl); }
+.sub-heading-xl  { font-size: var(--sub-heading-xl); }
+.sub-heading-l   { font-size: var(--sub-heading-l); }
+.sub-heading-m   { font-size: var(--sub-heading-m); }
+.sub-heading-s   { font-size: var(--sub-heading-s); }
+.sub-heading-xs  { font-size: var(--sub-heading-xs); }
+
+[class*="sub-heading-"] {
+  font-family: var(--sh--font-family);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+}
+
+/* Paragraphs — uses --p--font-family (body copy) */
+.paragraph-xxl { font-size: var(--text-xxl); line-height: 1.5; margin-bottom: var(--space-s); }
+.paragraph-xl  { font-size: var(--text-xl); line-height: 1.5; margin-bottom: var(--space-s); }
+.paragraph-l   { font-size: var(--text-l); line-height: 1.5; margin-bottom: var(--space-s); }
+.paragraph-m   { font-size: var(--text-m); line-height: 1.6; margin-bottom: var(--space-s); }
+.paragraph-s   { font-size: var(--text-s); line-height: 1.6; margin-bottom: var(--space-s); }
+.paragraph-xs  { font-size: var(--text-xs); line-height: 1.6; margin-bottom: var(--space-s); }
+.paragraph-xxs { font-size: var(--text-xxs); line-height: 1.6; margin-bottom: var(--space-s); }
+
+/* 
+  KILR Framework Utilities 
+  ------------------------
+*/
+
+/* --- Text Colors --- */
+.text-white { color: var(--color-light); }
+.text-dark { color: var(--color-dark); }
+.text-primary { color: var(--color-primary); }
+
+/* --- Flexbox Alignment (Parent) --- */
+.items-center { align-items: center; }
+.items-start { align-items: flex-start; }
+.items-end { align-items: flex-end; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+
+/* --- Content Flow (Children) --- */
+/* Used for 'Content Wrapper' elements to stack text vertically */
+.content-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s); /* Default text gap */
+}
+
+/* --- Truncation --- */
+.truncate-1 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+}
+
+.truncate-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+}
+
+.truncate-3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+}

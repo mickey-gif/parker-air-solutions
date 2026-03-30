@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brand Color Palette Demo</title>
+  <link rel="stylesheet" href="variables.css">
+  <style>
+    body {
+      padding: var(--space-l);
+      background-color: var(--color-light);
+      color: var(--color-dark);
+    }
+    
+    .color-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: var(--space-m);
+      margin-bottom: var(--space-xl);
+    }
+
+    .color-card {
+      border: 1px solid var(--color-grey);
+      border-radius: var(--space-xs);
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .color-swatch {
+      height: 100px;
+      width: 100%;
+    }
+
+    .color-info {
+      padding: var(--space-s);
+    }
+
+    .color-name {
+      font-weight: 700;
+      font-size: var(--text-m);
+      margin-bottom: var(--space-xxs);
+      display: block;
+    }
+
+    .color-value {
+      font-size: var(--text-s);
+      font-family: monospace;
+      color: var(--color-dark-70);
+    }
+
+    h2 {
+      margin-bottom: var(--space-m);
+      border-bottom: 1px solid var(--color-grey);
+      padding-bottom: var(--space-xs);
+    }
+  </style>
+</head>
+<body>
+
+  <div style="max-width: var(--container-l); margin: 0 auto;">
+    <h1 style="margin-bottom: var(--space-l);">Brand Color Variables</h1>
+
+    <!-- Primary Colors -->
+    <h2>Primary</h2>
+    <div class="color-grid">
+      <div class="color-card">
+        <div class="color-swatch" style="background-color: var(--color-primary);"></div>
+        <div class="color-info">
+          <span class="color-name">Primary</span>
+          <span class="color-value">--color-primary</span>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="color-swatch" style="background-color: var(--color-primary-70);"></div>
+        <div class="color-info">
+          <span class="color-name">Primary 70%</span>
+          <span class="color-value">--color-primary-70</span>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="color-swatch" style="background-color: var(--color-primary-50);"></div>
+        <div class="color-info">
+          <span class="color-name">Primary 50%</span>
+          <span class="color-value">--color-primary-50</span>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="color-swatch" style="background-color: var(--color-primary-30);"></div>
+        <div class="color-info">
+          <span class="color-name">Primary 30%</span>
+          <span class="color-value">--color-primary-30</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Secondary Colors -->
+    <h2>Secondary</h2>
+    <div class="color-grid">
+      <div class="color-card">
+        <div class="color-swatch" style="background-color: var(--color-secondary);"></div>
+        <div class="color-info">
+          <span class="color-name">Secondary</span>
+          <span class="color-value">--color-secondary</span>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="color-swatch" style="background-color: var(--color-secondary-70);"></div>
+        <div class="color-info">
+          <span class="color-name">Secondary 70%</span>
+          <span class="color-value">--color-secondary-70</span>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="color-swatch" style="background-color: var(--color-secondary-50);"></div>
+        <div class="color-info">
+          <span class="color-name">Secondary 50%</span>
+          <span class="color-value">--color-secondary-50</span>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="color-swatch" style="background-color: var(--color-secondary-30);"></div>
+        <div class="color-info">
+          <span class="color-name">Secondary 30%</span>
+          <span class="color-value">--color-secondary-30</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tertiary Colors -->
+    <h2>Tertiary</h2>
+    <div class="color-grid">
+      <div class="color-card">
+        <div class="color-swatch" style="background-color: var(--color-tertiary);"></div>
+        <div class="color-info">
+          <span class="color-name">Tertiary</span>
+          <span class="color-value">--color-tertiary</span>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="color-swatch" style="background-color: var(--color-tertiary-70);"></div>
+        <div class="color-info">
+          <span class="color-name">Tertiary 70%</span>
+          <span class="color-value">--color-tertiary-70</span>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="color-swatch" style="background-color: var(--color-tertiary-50);"></div>
+        <div class="color-info">
+          <span class="color-name">Tertiary 50%</span>
+          <span class="color-value">--color-tertiary-50</span>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="color-swatch" style="background-color: var(--color-tertiary-30);"></div>
+        <div class="color-info">
+          <span class="color-name">Tertiary 30%</span>
+          <span class="color-value">--color-tertiary-30</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dark Colors -->
+    <h2>Dark</h2>
+    <div class="color-grid">
+      <div class="color-card">
+        <div class="color-swatch" style="background-color: var(--color-dark);"></div>
+        <div class="color-info">
+          <span class="color-name">Dark</span>
+          <span class="color-value">--color-dark</span>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="color-swatch" style="background-color: var(--color-dark-70);"></div>
+        <div class="color-info">
+          <span class="color-name">Dark 70%</span>
+          <span class="color-value">--color-dark-70</span>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="color-swatch" style="background-color: var(--color-dark-50);"></div>
+        <div class="color-info">
+          <span class="color-name">Dark 50%</span>
+          <span class="color-value">--color-dark-50</span>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="color-swatch" style="background-color: var(--color-dark-30);"></div>
+        <div class="color-info">
+          <span class="color-name">Dark 30%</span>
+          <span class="color-value">--color-dark-30</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Light Colors -->
+    <h2>Light</h2>
+    <div class="color-grid">
+      <div class="color-card" style="border: 1px solid #ddd;">
+        <div class="color-swatch" style="background-color: var(--color-light);"></div>
+        <div class="color-info">
+          <span class="color-name">Light</span>
+          <span class="color-value">--color-light</span>
+        </div>
+      </div>
+      <div class="color-card" style="border: 1px solid #ddd;">
+        <div class="color-swatch" style="background-color: var(--color-light-70);"></div>
+        <div class="color-info">
+          <span class="color-name">Light 70%</span>
+          <span class="color-value">--color-light-70</span>
+        </div>
+      </div>
+      <div class="color-card" style="border: 1px solid #ddd;">
+        <div class="color-swatch" style="background-color: var(--color-light-50);"></div>
+        <div class="color-info">
+          <span class="color-name">Light 50%</span>
+          <span class="color-value">--color-light-50</span>
+        </div>
+      </div>
+      <div class="color-card" style="border: 1px solid #ddd;">
+        <div class="color-swatch" style="background-color: var(--color-light-30);"></div>
+        <div class="color-info">
+          <span class="color-name">Light 30%</span>
+          <span class="color-value">--color-light-30</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

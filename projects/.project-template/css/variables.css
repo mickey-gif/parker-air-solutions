@@ -1,0 +1,18 @@
+/* ============================================
+   [CLIENT_NAME] - Brand Variables
+   Override framework defaults here
+   ============================================ */
+
+:root {
+  /* Brand Colors */
+  /* --color-primary: ; */
+  /* --color-secondary: ; */
+  /* --color-accent: ; */
+  /* --color-dark: ; */
+  /* --color-light: ; */
+  /* --color-body: ; */
+
+  /* Fonts (uncomment and set after adding Google Fonts link in HTML) */
+  /* --font-heading: 'Font Name', sans-serif; */
+  /* --font-body: 'Font Name', sans-serif; */
+}

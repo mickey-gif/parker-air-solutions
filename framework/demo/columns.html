@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Flex Columns</title>
+  <link rel="stylesheet" href="variables.css">
+  <link rel="stylesheet" href="flex-columns.css">
+  <style>
+    /* Demo Styles */
+    body {
+      padding: var(--space-m);
+      background-color: var(--color-light);
+      color: var(--color-dark);
+    }
+    
+    .demo-section {
+      margin-bottom: var(--space-xl);
+      border-bottom: 1px solid var(--color-grey);
+      padding-bottom: var(--space-l);
+    }
+
+    h2 {
+      margin-bottom: var(--space-m);
+    }
+
+    code {
+      background: var(--color-grey);
+      padding: 0.2em 0.4em;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <div style="max-width: var(--container-xl); margin: 0 auto;">
+    <h1>Responsive Flex Columns</h1>
+    <p style="margin-bottom: var(--space-l); max-width: 60ch;">
+      This grid system uses Flexbox wrapping with <code>gap</code>. Column widths are calculated dynamically to account for the gap using: <br>
+      <code>calc((100% - (cols - 1) * gap) / cols)</code>.<br>
+      Resize the browser to see breakpoints (1100px, 768px, 479px).
+    </p>
+
+    <!-- 2 Columns (50%) -->
+    <div class="demo-section">
+      <h2>Col-50 (2 Columns)</h2>
+      <p>Behavior: 50% -> 100% (< 1100px)</p>
+      <div class="flex-grid">
+        <div class="col-50"><div class="col-content">1</div></div>
+        <div class="col-50"><div class="col-content">2</div></div>
+        <div class="col-50"><div class="col-content">3 (Wrap)</div></div>
+      </div>
+    </div>
+
+    <!-- 3 Columns (33%) -->
+    <div class="demo-section">
+      <h2>Col-33 (3 Columns)</h2>
+      <p>Behavior: 33% -> 50% (< 1100px) -> 100% (< 768px)</p>
+      <p>Note: "Center Alignment" effect visible when items don't fill row (e.g. 4 items).</p>
+      <div class="flex-grid">
+        <div class="col-33"><div class="col-content">1</div></div>
+        <div class="col-33"><div class="col-content">2</div></div>
+        <div class="col-33"><div class="col-content">3</div></div>
+        <div class="col-33"><div class="col-content">4 (Centered)</div></div>
+      </div>
+    </div>
+
+    <!-- 4 Columns (25%) -->
+    <div class="demo-section">
+      <h2>Col-25 (4 Columns)</h2>
+      <p>Behavior: 25% -> 50% (< 1100px) -> 50% (< 768px) -> 100% (< 479px)</p>
+      <div class="flex-grid">
+        <div class="col-25"><div class="col-content">1</div></div>
+        <div class="col-25"><div class="col-content">2</div></div>
+        <div class="col-25"><div class="col-content">3</div></div>
+        <div class="col-25"><div class="col-content">4</div></div>
+        <div class="col-25"><div class="col-content">5</div></div>
+      </div>
+    </div>
+
+    <!-- 5 Columns (20%) -->
+    <div class="demo-section">
+      <h2>Col-20 (5 Columns)</h2>
+      <p>Behavior: 20% -> 33% (< 1100px) -> 50% (< 768px) -> 100% (< 479px)</p>
+      <div class="flex-grid">
+        <div class="col-20"><div class="col-content">1</div></div>
+        <div class="col-20"><div class="col-content">2</div></div>
+        <div class="col-20"><div class="col-content">3</div></div>
+        <div class="col-20"><div class="col-content">4</div></div>
+        <div class="col-20"><div class="col-content">5</div></div>
+      </div>
+    </div>
+
+    <!-- 6 Columns (16%) -->
+    <div class="demo-section">
+      <h2>Col-16 (6 Columns)</h2>
+      <p>Behavior: 16% -> 25% (< 1100px) -> 33% (< 768px) -> 50% (< 479px)</p>
+      <div class="flex-grid" style="--gap: var(--space-s);"> <!-- Example of overriding gap -->
+        <div class="col-16"><div class="col-content">1</div></div>
+        <div class="col-16"><div class="col-content">2</div></div>
+        <div class="col-16"><div class="col-content">3</div></div>
+        <div class="col-16"><div class="col-content">4</div></div>
+        <div class="col-16"><div class="col-content">5</div></div>
+        <div class="col-16"><div class="col-content">6</div></div>
+        <div class="col-16"><div class="col-content">7</div></div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

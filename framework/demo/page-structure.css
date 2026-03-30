@@ -1,0 +1,136 @@
+/* 
+  Page Structuring Framework 
+  --------------------------
+  Hierarchy: Page Wrapper > Section > Container > Layout Grid > Content Wrapper
+*/
+
+/* 1. Page Wrapper */
+.page-wrapper {
+  width: 100%;
+  /* Prevents horizontal scroll, but breaks sticky positioning */
+  overflow: hidden; 
+  position: relative;
+}
+
+/* Combo class to allow sticky positioning */
+.page-wrapper.allow-sticky {
+  overflow: visible;
+}
+
+
+/* 2. Sections */
+/* 
+   Sections use the --section variable which changes based on mode.
+   For CSS implementation, we simulate "Modes" using classes or data-attributes
+   since native CSS variables don't have "modes" like Webflow.
+   Here, the base .section class applies the padding variable.
+   
+   Note: In Webflow, you'd set the 'Section' variable on the element and change the mode.
+   Here, we assume the variable --section-padding is set by a utility class or default.
+*/
+
+.section {
+  width: 100%;
+  position: relative; /* For absolute positioned elements */
+  
+  /* Default Padding */
+  padding-top: var(--section-l);
+  padding-bottom: var(--section-l);
+}
+
+/* Section Size Modifiers (Simulating Modes) */
+.section-xxl { padding-top: var(--section-xxl); padding-bottom: var(--section-xxl); }
+.section-xl  { padding-top: var(--section-xl); padding-bottom: var(--section-xl); }
+.section-l   { padding-top: var(--section-l); padding-bottom: var(--section-l); }
+.section-m   { padding-top: var(--section-m); padding-bottom: var(--section-m); }
+.section-s   { padding-top: var(--section-s); padding-bottom: var(--section-s); }
+.section-xs  { padding-top: var(--section-xs); padding-bottom: var(--section-xs); }
+.section-xxs { padding-top: var(--section-xxs); padding-bottom: var(--section-xxs); }
+
+
+/* 3. Containers */
+/* 
+   Containers set the width based on the container variable.
+   Max-width is set to a percentage to prevent overflow on smaller screens.
+   Centered with auto margins.
+*/
+[class^="container-"], [class*=" container-"] {
+  width: 100%; /* Fallback */
+  max-width: 95%; /* Default desktop guard */
+  margin-left: auto;
+  margin-right: auto;
+  
+  /* Default horizontal padding to prevent touching edges if width hits 100% */
+  padding-left: var(--space-s); 
+  padding-right: var(--space-s);
+}
+
+@media (max-width: 768px) {
+  [class^="container-"], [class*=" container-"] {
+    max-width: 98%; /* Mobile/Tablet guard */
+  }
+}
+
+/* Container Size Modifiers */
+.container-max { width: var(--container-max); }
+.container-xxl { width: var(--container-xxl); }
+.container-xl  { width: var(--container-xl); }
+.container-l   { width: var(--container-l); }
+.container-m   { width: var(--container-m); }
+.container-s   { width: var(--container-s); }
+.container-xs  { width: var(--container-xs); }
+.container-xxs { width: var(--container-xxs); }
+
+
+/* 4. Content Wrapper */
+/* 
+   Generic wrapper for content elements. 
+   Often Flex or Grid.
+*/
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
+}
+
+
+/* ------------------------------------------------------------
+   Advanced / Edge Case Classes
+   ------------------------------------------------------------ */
+
+/* Absolute Decorative Elements */
+.absolute-decoration {
+  position: absolute;
+  z-index: 0; /* Behind content usually */
+  pointer-events: none; /* Don't block clicks */
+}
+
+.absolute-top-right { top: 0; right: 0; }
+.absolute-bottom-left { bottom: 0; left: 0; }
+
+/* Sticky Content (e.g. split screen scroll) */
+.sticky-content {
+  position: sticky;
+  top: var(--space-l); /* Sticky offset */
+  align-self: start;
+}
+
+/* Negative Margin Overlap Example (Hero Overlay) */
+/* 
+   Note: This usually requires specific context. 
+   Negative margin percent relates to the parent width.
+*/
+.overlap-left-16 {
+  margin-left: -16.667%;
+  z-index: 1; /* Ensure it sits on top or below as needed */
+  position: relative;
+}
+
+.overlap-under {
+  z-index: 0;
+}
+
+.overlap-over {
+  z-index: 2;
+}
+

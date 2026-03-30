@@ -1,0 +1,17 @@
+{
+  "name": "kilr-visual-editor",
+  "version": "1.0.0",
+  "description": "Visual editor for KILR websites using GrapesJS Studio SDK",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@grapesjs/studio-sdk": "^1.0.60"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}

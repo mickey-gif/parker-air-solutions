@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shieldcoat Hero Reconstruction</title>
+  <link rel="stylesheet" href="variables.css">
+  <link rel="stylesheet" href="flex-columns.css">
+  <link rel="stylesheet" href="page-structure.css">
+  <link rel="stylesheet" href="typography.css">
+  <link rel="stylesheet" href="utilities.css">
+  <style>
+    /* Component Overrides */
+    
+    .hero {
+      background-color: var(--color-light);
+      color: var(--color-dark);
+    }
+
+    .hero__content {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-m);
+      justify-content: center;
+      height: 100%;
+    }
+
+    .hero__visual {
+      position: relative;
+      height: 600px; /* Fixed height for demo visual */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Paint Can Placeholder */
+    .paint-can {
+      width: 60%;
+      height: 70%;
+      background: linear-gradient(135deg, #ddd 0%, #fff 100%);
+      border: 1px solid #ccc;
+      border-radius: var(--space-s);
+      position: relative;
+      z-index: 2;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Decorative Blob */
+    .paint-blob {
+      position: absolute;
+      top: 10%;
+      right: 0;
+      width: 80%;
+      height: 80%;
+      background: var(--color-primary);
+      border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+      z-index: 1;
+      opacity: 0.2;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      padding: var(--space-s) var(--space-m);
+      border-radius: 4px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      font-family: var(--font-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .btn--primary {
+      background-color: var(--color-primary);
+      color: var(--color-light);
+    }
+
+    .btn--outline {
+      border: 1px solid var(--color-dark);
+      color: var(--color-dark);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-wrapper">
+
+    <!-- Nav -->
+    <nav kilr-nav="nav" style="background: white; padding: var(--space-s); border-bottom: 1px solid #eee;">
+      <div class="container-l" style="display: flex; justify-content: space-between;">
+        <div style="font-weight:bold; font-size:var(--text-l);">SHIELDCOAT</div>
+        <div>Menu</div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="section-xxl hero">
+      <div class="container-l">
+        
+        <!-- Grid with Large Gap -->
+        <div class="flex-grid gap-l" style="align-items: center;">
+          
+          <!-- Content Column -->
+          <div class="col-50">
+            <div class="hero__content" kilr-animation="fade-up">
+              <h1 class="heading-xxl">
+                Australian Made Paint Professionals Trust
+              </h1>
+              <p class="paragraph-l truncate-3" style="max-width: 50ch;">
+                Shieldcoat is the trusted Australian manufacturer of durable, water-based paints for roofs, walls & concrete, backed by a unique colourfast warranty. We define quality through longevity.
+              </p>
+              <div class="hero__actions">
+                <a href="#" class="btn btn--primary">Find a Stockist</a>
+                <a href="#" class="btn btn--outline">Explore Colours</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual Column -->
+          <div class="col-50">
+            <div class="hero__visual" kilr-animation="fade-in">
+              <div class="paint-can">Paint Can Visual</div>
+              <div class="paint-blob"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script>
+    // Animation Shim
+    document.addEventListener('DOMContentLoaded', () => {
+      const anims = document.querySelectorAll('[kilr-animation]');
+      anims.forEach(el => {
+        el.style.opacity = '0';
+        setTimeout(() => { el.style.opacity = '1'; el.style.transition = 'opacity 1s'; }, 300);
+      });
+    });
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

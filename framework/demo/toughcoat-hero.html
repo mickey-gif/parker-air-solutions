@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toughcoat Hero Reconstruction</title>
+  <link rel="stylesheet" href="variables.css">
+  <link rel="stylesheet" href="flex-columns.css">
+  <link rel="stylesheet" href="page-structure.css">
+  <link rel="stylesheet" href="typography.css">
+  <link rel="stylesheet" href="utilities.css">
+  <style>
+    /* Component Overrides / Specific Design Elements */
+    
+    .hero {
+      position: relative;
+      overflow: hidden;
+      /* Add padding top if nav was static, but since it's fixed overlay, we might need padding or just let it sit on top */
+      padding-top: calc(var(--section-xxl) + 80px); /* Example offset if needed, or just standard section padding */
+    }
+
+    /* Specific Backgrounds */
+    .bg-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+      background: #0a2e4d;
+    }
+
+    .bg-clip-mask {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background: linear-gradient(180deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.8) 100%);
+    }
+
+    /* Spigot Specifics */
+    .hero__spigot-wrapper {
+      position: relative;
+      height: 400px;
+    }
+    
+    .hero__spigot-img {
+      width: 120%; 
+      max-width: none;
+      position: absolute;
+      left: -10%;
+      top: 0;
+    }
+
+    /* Button Component */
+    .btn-l-dark {
+      display: inline-block;
+      padding: var(--space-s) var(--space-m);
+      background-color: var(--color-dark);
+      color: var(--color-light);
+      text-transform: uppercase;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    /* Fixed Nav Component */
+    .nav {
+      position: fixed; /* Fixed positioning */
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100; /* High z-index to sit above everything */
+      padding: var(--space-s) 0;
+      transition: background-color 0.3s ease;
+      /* Optional: Add a background if it needs to be visible over light sections, 
+         but for this Hero it sits over dark. */
+    }
+    
+    /* Nav Scrolled State (Example of how we'd handle background on scroll) */
+    .nav.is-scrolled {
+      background-color: rgba(10, 46, 77, 0.9);
+      backdrop-filter: blur(5px);
+    }
+
+    .nav-links { display: flex; gap: var(--space-m); }
+    
+    /* Layering Fix: Content above BG */
+    .container-xl, .container-full { position: relative; z-index: 2; }
+  </style>
+</head>
+<body>
+
+  <div class="page-wrapper">
+
+    <!-- NAV: Fixed Overlay -->
+    <nav class="nav">
+      <div class="container-xl" style="display: flex; justify-content: space-between; align-items: center;">
+        <div class="nav-logo text-white">LOGO</div>
+        <div class="nav-links text-white">
+          <a href="#" class="text-white">Link 1</a>
+          <a href="#" class="text-white">Link 2</a>
+          <a href="#" class="text-white">Link 3</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SECTION 1: HERO -->
+    <!-- Mode: XXL, Combo: Hero (Relative context) -->
+    <section class="section-xxl hero text-white">
+      
+      <!-- INVISIBLE BOX: LAYERS -->
+      <div class="bg-image"></div>
+      <div class="bg-clip-mask"></div>
+
+      <!-- INVISIBLE BOX: CONTAINER FULL (Top Bar) -->
+      <div class="container-full">
+        <div class="container-xl">
+          <img src="placeholder-logo.png" alt="Toughcoat Logo" style="height: 50px; margin-bottom: var(--space-m);">
+        </div>
+      </div>
+
+      <!-- INVISIBLE BOX: CONTAINER XL (Main Content) -->
+      <div class="container-xl">
+        
+        <!-- GRID: Gap-XXS, Vertically Centered -->
+        <div class="flex-grid gap-xxs items-center">
+          
+          <!-- COL-25: Spigot Image -->
+          <div class="col-25">
+            <div class="hero__spigot-wrapper" kilr-scroll-move="spigot">
+              <div class="hero__spigot-img" style="background: silver; height: 100%; border: 1px solid white;"></div>
+            </div>
+          </div>
+
+          <!-- COL-75: Content Text -->
+          <div class="col-75">
+            <!-- Content Wrapper: Vertical Flow -->
+            <div class="content-vertical">
+              <h1 class="heading-xl">CLASSIC STYLE MEETS<br>MODERN SAFETY</h1>
+              <div>
+                <a href="#" class="btn-l-dark">View Product Range</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: WHAT IS TOUGHCOAT -->
+    <section class="section-m text-white" style="background-color: var(--color-dark);">
+      <div class="container-xl">
+        
+        <!-- GRID: Gap-M -->
+        <div class="flex-grid gap-m">
+          
+          <!-- COL-33: Destination -->
+          <div class="col-33" id="spigot-destination"></div>
+
+          <!-- COL-66: Content -->
+          <div class="col-66">
+            <div class="content-vertical">
+              <img src="logo-small.png" alt="Logo" style="width: 50px; background: white;">
+              <h2 class="heading-m">WHAT IS TOUGHCOAT?</h2>
+              <p class="paragraph-m">
+                Toughcoat is a revolutionary non-conductive spigot technology...
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script>
+    /* Simple Scroll Move Demo */
+    window.addEventListener('scroll', () => {
+      const spigot = document.querySelector('[kilr-scroll-move="spigot"]');
+      if(spigot) {
+        spigot.style.transform = `translateY(${window.scrollY * 0.5}px)`;
+      }
+
+      /* Simple Nav Scroll Effect */
+      const nav = document.querySelector('.nav');
+      if (window.scrollY > 50) {
+        nav.classList.add('is-scrolled');
+      } else {
+        nav.classList.remove('is-scrolled');
+      }
+    });
+  </script>
+
+</body>
+</html>
