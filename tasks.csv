@@ -1,71 +1,71 @@
-id,project,title,area,assignee,status,priority,due,estimate_hours,logged_hours,tags,created,updated,source,notes
-PA-001,PA-P01,Shoot planning and brief,strategy,adrian,planned,high,2026-04-03,0.5,0,content-cycle-1,2026-03-27,,pm-plan,
-PA-002,PA-P01,Shoot day — filming,content,matt,planned,high,2026-04-07,4,0,content-cycle-1;shoot,2026-03-27,,pm-plan,Brisbane client — Matt shoots
-PA-003,PA-P01,Complex reel edits x6,content,matt,planned,medium,2026-04-17,9,0,content-cycle-1;editing,2026-03-27,,pm-plan,B-roll + case study + multi-angle
-PA-004,PA-P01,Simple reel edits x4,content,madison,planned,medium,2026-04-17,3,0,content-cycle-1;editing,2026-03-27,,pm-plan,Trim top & tail + talking head
-PA-005,PA-P01,Photo gallery editing,content,madison,planned,medium,2026-04-14,1,0,content-cycle-1;photos,2026-03-27,,pm-plan,10-20 images cull + edit
-PA-006,PA-P01,Infographics x2,design,madison,planned,medium,2026-04-17,3,0,content-cycle-1;design,2026-03-27,,pm-plan,
-PA-007,PA-P01,Case study blog article,seo,michael,planned,medium,2026-04-17,1,0,content-cycle-1;blog,2026-03-27,,pm-plan,Claude-assisted writing
-PA-008,PA-P01,Content schedule + captions,content,kim,planned,medium,2026-04-18,1,0,content-cycle-1;scheduling,2026-03-27,,pm-plan,Uses /kilr-copywriting skill
-PA-009,PA-P02,Shoot planning and brief,strategy,adrian,planned,high,2026-04-24,0.5,0,content-cycle-2,2026-03-27,,pm-plan,
-PA-010,PA-P02,Shoot day — filming,content,matt,planned,high,2026-04-28,4,0,content-cycle-2;shoot,2026-03-27,,pm-plan,Brisbane client — Matt shoots
-PA-011,PA-P02,Complex reel edits x6,content,matt,planned,medium,2026-05-08,9,0,content-cycle-2;editing,2026-03-27,,pm-plan,B-roll + case study + multi-angle
-PA-012,PA-P02,Simple reel edits x4,content,madison,planned,medium,2026-05-08,3,0,content-cycle-2;editing,2026-03-27,,pm-plan,Trim top & tail + talking head
-PA-013,PA-P02,Photo gallery editing,content,madison,planned,medium,2026-05-05,1,0,content-cycle-2;photos,2026-03-27,,pm-plan,10-20 images cull + edit
-PA-014,PA-P02,Infographics x2,design,madison,planned,medium,2026-05-08,3,0,content-cycle-2;design,2026-03-27,,pm-plan,
-PA-015,PA-P02,Case study blog article,seo,michael,planned,medium,2026-05-08,1,0,content-cycle-2;blog,2026-03-27,,pm-plan,Claude-assisted writing
-PA-016,PA-P02,Content schedule + captions,content,kim,planned,medium,2026-05-09,1,0,content-cycle-2;scheduling,2026-03-27,,pm-plan,Uses /kilr-copywriting skill
-PA-017,PA-P03,Shoot planning and brief,strategy,adrian,planned,high,2026-05-15,0.5,0,content-cycle-3,2026-03-27,,pm-plan,
-PA-018,PA-P03,Shoot day — filming,content,matt,planned,high,2026-05-19,4,0,content-cycle-3;shoot,2026-03-27,,pm-plan,Brisbane client — Matt shoots
-PA-019,PA-P03,Complex reel edits x6,content,matt,planned,medium,2026-05-29,9,0,content-cycle-3;editing,2026-03-27,,pm-plan,B-roll + case study + multi-angle
-PA-020,PA-P03,Simple reel edits x4,content,madison,planned,medium,2026-05-29,3,0,content-cycle-3;editing,2026-03-27,,pm-plan,Trim top & tail + talking head
-PA-021,PA-P03,Photo gallery editing,content,madison,planned,medium,2026-05-26,1,0,content-cycle-3;photos,2026-03-27,,pm-plan,10-20 images cull + edit
-PA-022,PA-P03,Infographics x2,design,madison,planned,medium,2026-05-29,3,0,content-cycle-3;design,2026-03-27,,pm-plan,
-PA-023,PA-P03,Case study blog article,seo,michael,planned,medium,2026-05-29,1,0,content-cycle-3;blog,2026-03-27,,pm-plan,Claude-assisted writing
-PA-024,PA-P03,Content schedule + captions,content,kim,planned,medium,2026-05-30,1,0,content-cycle-3;scheduling,2026-03-27,,pm-plan,Uses /kilr-copywriting skill
-PA-025,PA-P04,Shoot planning and brief,strategy,adrian,planned,high,2026-06-05,0.5,0,content-cycle-4,2026-03-27,,pm-plan,
-PA-026,PA-P04,Shoot day — filming,content,matt,planned,high,2026-06-09,4,0,content-cycle-4;shoot,2026-03-27,,pm-plan,Brisbane client — Matt shoots
-PA-027,PA-P04,Complex reel edits x6,content,matt,planned,medium,2026-06-19,9,0,content-cycle-4;editing,2026-03-27,,pm-plan,B-roll + case study + multi-angle
-PA-028,PA-P04,Simple reel edits x4,content,madison,planned,medium,2026-06-19,3,0,content-cycle-4;editing,2026-03-27,,pm-plan,Trim top & tail + talking head
-PA-029,PA-P04,Photo gallery editing,content,madison,planned,medium,2026-06-16,1,0,content-cycle-4;photos,2026-03-27,,pm-plan,10-20 images cull + edit
-PA-030,PA-P04,Infographics x2,design,madison,planned,medium,2026-06-19,3,0,content-cycle-4;design,2026-03-27,,pm-plan,
-PA-031,PA-P04,Case study blog article,seo,michael,planned,medium,2026-06-19,1,0,content-cycle-4;blog,2026-03-27,,pm-plan,Claude-assisted writing
-PA-032,PA-P04,Content schedule + captions,content,kim,planned,medium,2026-06-20,1,0,content-cycle-4;scheduling,2026-03-27,,pm-plan,Uses /kilr-copywriting skill
-PA-033,PA-P05,Run technical SEO audit,seo,michael,planned,high,2026-04-11,2,0,seo;audit,2026-03-27,,pm-plan,Run /seo-audit skill — review output
-PA-034,PA-P05,Fix critical audit issues,seo,michael,planned,high,2026-04-25,2,0,seo;fixes,2026-03-27,,pm-plan,Claude identifies — Michael implements
-PA-035,PA-P05,Update meta descriptions,seo,michael,planned,medium,2026-05-09,1,0,seo;meta,2026-03-27,,pm-plan,Claude writes all — Michael reviews + publishes
-PA-036,PA-P05,Internal linking review,seo,michael,planned,medium,2026-05-16,1,0,seo;links,2026-03-27,,pm-plan,Claude analyses structure
-PA-037,PA-P05,Keyword ranking review,seo,adrian,planned,medium,2026-05-30,1,0,seo;keywords,2026-03-27,,pm-plan,Claude pulls + analyses data
-PA-038,PA-P05,SEO report for client,seo,adrian,planned,medium,2026-06-13,1,0,seo;report,2026-03-27,,pm-plan,Claude generates via /kilr-client-report
-PA-039,PA-P05,Implement audit recommendations,website,michael,planned,medium,2026-06-20,2,0,seo;website,2026-03-27,,pm-plan,
-PA-040,PA-P06,Campaign setup/refresh,ads,adrian,planned,high,2026-04-04,3,0,meta-ads;setup,2026-03-27,,pm-plan,
-PA-041,PA-P06,Monthly optimisation — April,ads,adrian,planned,medium,2026-04-30,2,0,meta-ads;optimise,2026-03-27,,pm-plan,
-PA-042,PA-P06,Monthly optimisation — May,ads,adrian,planned,medium,2026-05-30,2,0,meta-ads;optimise,2026-03-27,,pm-plan,
-PA-043,PA-P06,Monthly optimisation — June,ads,adrian,planned,medium,2026-06-27,2,0,meta-ads;optimise,2026-03-27,,pm-plan,
-PA-044,PA-P06,Quarterly performance report,ads,adrian,planned,medium,2026-06-27,3,0,meta-ads;report,2026-03-27,,pm-plan,
-PA-045,PA-P07,Write VO narrative script,strategy,adrian,planned,high,2026-04-11,1,0,vo-ad;script,2026-03-27,,pm-plan,Platform-native narrated ad — Claude assists with script
-PA-046,PA-P07,Generate VO via ElevenLabs,content,adrian,planned,high,2026-04-14,0.5,0,vo-ad;vo,2026-03-27,,pm-plan,ElevenLabs text-to-speech
-PA-047,PA-P07,Select b-roll + edit with VO,content,matt,planned,high,2026-04-18,2,0,vo-ad;editing,2026-03-27,,pm-plan,Layer b-roll under voice over
-PA-048,PA-P07,Add captions + export formats,content,matt,planned,medium,2026-04-21,1,0,vo-ad;captions,2026-03-27,,pm-plan,Captions + exports for Meta/IG/TikTok
-PA-049,PA-P07,Review + revisions,strategy,adrian,planned,medium,2026-04-23,0.5,0,vo-ad;review,2026-03-27,,pm-plan,
-PA-050,PA-P08,Keyword research + campaign structure,ads,adrian,planned,high,2026-04-18,1.5,0,google-ads;setup,2026-03-27,,pm-plan,First Google Ads for Parker Air
-PA-051,PA-P08,Ad copy writing,ads,adrian,planned,high,2026-04-21,1,0,google-ads;copy,2026-03-27,,pm-plan,Search + responsive ads — Claude assists
-PA-052,PA-P08,Campaign build + settings (train Michael),ads,adrian,planned,high,2026-04-25,2,0,google-ads;setup;training,2026-03-27,,pm-plan,Adrian builds + trains Michael for ongoing management
-PA-053,PA-P08,Monthly optimisation — May,ads,michael,planned,medium,2026-05-30,1,0,google-ads;optimise,2026-03-27,,pm-plan,Michael manages going forward
-PA-054,PA-P08,Monthly optimisation — June,ads,michael,planned,medium,2026-06-27,1,0,google-ads;optimise,2026-03-27,,pm-plan,Michael manages going forward
-PA-055,PA-P08,Quarterly performance report,ads,adrian,planned,medium,2026-06-27,1.5,0,google-ads;report,2026-03-27,,pm-plan,
-PA-056,PA-P09,GTM container setup + install on site,google,adrian,planned,high,2026-04-11,1,0,gtm;setup,2026-03-27,,pm-plan,Adrian teaches Michael — create GTM container + add to site
-PA-057,PA-P09,Meta pixel via GTM + event tracking,google,adrian,planned,high,2026-04-14,1,0,gtm;meta-pixel,2026-03-27,,pm-plan,Install Meta pixel + configure standard events via GTM
-PA-058,PA-P09,Google Ads conversion tracking via GTM,google,adrian,planned,high,2026-04-18,1,0,gtm;google-ads,2026-03-27,,pm-plan,Form submissions + phone calls as conversions
-PA-059,PA-P09,Test all conversions end-to-end,google,michael,planned,high,2026-04-21,1,0,gtm;testing,2026-03-27,,pm-plan,Michael tests — verify all events fire correctly
-PA-060,PA-P10,Migration audit + planning,website,michael,planned,high,2026-05-02,1,0,migration;planning,2026-03-27,,pm-plan,Audit current Webflow site + plan Cloudflare migration
-PA-061,PA-P10,Export + convert Webflow site,website,michael,planned,high,2026-05-09,2,0,migration;export,2026-03-27,,pm-plan,AI-assisted conversion
-PA-062,PA-P10,Cloudflare Pages setup + deploy,website,michael,planned,high,2026-05-14,1,0,migration;cloudflare,2026-03-27,,pm-plan,
-PA-063,PA-P10,DNS migration + SSL + testing,website,michael,planned,high,2026-05-16,1,0,migration;dns,2026-03-27,,pm-plan,
-PA-064,PA-P11,LP strategy + wireframe brief,strategy,adrian,planned,high,2026-05-02,1,0,landing-page;strategy,2026-03-27,,pm-plan,Local services LP for Google Ads + Meta traffic testing
-PA-065,PA-P11,LP copy writing,website,adrian,planned,high,2026-05-05,0.5,0,landing-page;copy,2026-03-27,,pm-plan,Claude-assisted via /kilr-copywriting
-PA-066,PA-P11,LP UX design,design,madison,planned,high,2026-05-12,3,0,landing-page;design,2026-03-27,,pm-plan,Madison designs local services LP
-PA-067,PA-P11,LP development + build,website,michael,planned,high,2026-05-19,2,0,landing-page;dev,2026-03-27,,pm-plan,Michael builds from Madison's design
-PA-068,PA-P11,QA + responsive testing,website,michael,planned,medium,2026-05-21,0.5,0,landing-page;qa,2026-03-27,,pm-plan,
-PA-069,PA-P12,Write GTM setup skill / playbook,automations,adrian,planned,medium,2026-05-23,1,0,skills;gtm,2026-03-27,,pm-plan,Step-by-step for Michael to manage GTM independently
-PA-070,PA-P12,Write conversion tracking skill / playbook,automations,adrian,planned,medium,2026-05-30,1,0,skills;tracking,2026-03-27,,pm-plan,Step-by-step for Michael to set up tracking on new clients
+id,title,assignee,team,estimate_hours,due,priority,depends_on
+PA-001,Shoot planning and brief — Cycle 1,adrian,strategy,0.5,2026-04-03,high,
+PA-002,Shoot day — filming — Cycle 1,matt,content,4,2026-04-07,high,PA-001
+PA-003,Complex reel edits x6 — Cycle 1,matt,content,9,2026-04-17,medium,PA-002
+PA-004,Simple reel edits x4 — Cycle 1,madison,content,3,2026-04-17,medium,PA-002
+PA-005,Photo gallery editing — Cycle 1,madison,content,1,2026-04-14,medium,PA-002
+PA-006,Infographics x2 — Cycle 1,madison,design,3,2026-04-17,medium,PA-002
+PA-007,Case study blog article — Cycle 1,michael,seo,1,2026-04-17,medium,PA-002
+PA-008,Content schedule + captions — Cycle 1,kim,content,1,2026-04-18,medium,PA-005;PA-003;PA-004;PA-006
+PA-009,Shoot planning and brief — Cycle 2,adrian,strategy,0.5,2026-04-24,high,
+PA-010,Shoot day — filming — Cycle 2,matt,content,4,2026-04-28,high,PA-009
+PA-011,Complex reel edits x6 — Cycle 2,matt,content,9,2026-05-08,medium,PA-010
+PA-012,Simple reel edits x4 — Cycle 2,madison,content,3,2026-05-08,medium,PA-010
+PA-013,Photo gallery editing — Cycle 2,madison,content,1,2026-05-05,medium,PA-010
+PA-014,Infographics x2 — Cycle 2,madison,design,3,2026-05-08,medium,PA-010
+PA-015,Case study blog article — Cycle 2,michael,seo,1,2026-05-08,medium,PA-010
+PA-016,Content schedule + captions — Cycle 2,kim,content,1,2026-05-09,medium,PA-013;PA-011;PA-012;PA-014
+PA-017,Shoot planning and brief — Cycle 3,adrian,strategy,0.5,2026-05-15,high,
+PA-018,Shoot day — filming — Cycle 3,matt,content,4,2026-05-19,high,PA-017
+PA-019,Complex reel edits x6 — Cycle 3,matt,content,9,2026-05-29,medium,PA-018
+PA-020,Simple reel edits x4 — Cycle 3,madison,content,3,2026-05-29,medium,PA-018
+PA-021,Photo gallery editing — Cycle 3,madison,content,1,2026-05-26,medium,PA-018
+PA-022,Infographics x2 — Cycle 3,madison,design,3,2026-05-29,medium,PA-018
+PA-023,Case study blog article — Cycle 3,michael,seo,1,2026-05-29,medium,PA-018
+PA-024,Content schedule + captions — Cycle 3,kim,content,1,2026-05-30,medium,PA-021;PA-019;PA-020;PA-022
+PA-025,Shoot planning and brief — Cycle 4,adrian,strategy,0.5,2026-06-05,high,
+PA-026,Shoot day — filming — Cycle 4,matt,content,4,2026-06-09,high,PA-025
+PA-027,Complex reel edits x6 — Cycle 4,matt,content,9,2026-06-19,medium,PA-026
+PA-028,Simple reel edits x4 — Cycle 4,madison,content,3,2026-06-19,medium,PA-026
+PA-029,Photo gallery editing — Cycle 4,madison,content,1,2026-06-16,medium,PA-026
+PA-030,Infographics x2 — Cycle 4,madison,design,3,2026-06-19,medium,PA-026
+PA-031,Case study blog article — Cycle 4,michael,seo,1,2026-06-19,medium,PA-026
+PA-032,Content schedule + captions — Cycle 4,kim,content,1,2026-06-20,medium,PA-029;PA-027;PA-028;PA-030
+PA-033,Run technical SEO audit,michael,seo,2,2026-04-11,high,
+PA-034,Fix critical audit issues,michael,seo,2,2026-04-25,high,
+PA-035,Update meta descriptions,michael,seo,1,2026-05-09,medium,
+PA-036,Internal linking review,michael,seo,1,2026-05-16,medium,
+PA-037,Keyword ranking review,adrian,seo,1,2026-05-30,medium,
+PA-038,SEO report for client,adrian,seo,1,2026-06-13,medium,
+PA-039,Implement audit recommendations,michael,website,2,2026-06-20,medium,
+PA-040,Campaign setup/refresh,adrian,ads,3,2026-04-04,high,
+PA-041,Monthly optimisation — April,adrian,ads,2,2026-04-30,medium,
+PA-042,Monthly optimisation — May,adrian,ads,2,2026-05-30,medium,
+PA-043,Monthly optimisation — June,adrian,ads,2,2026-06-27,medium,
+PA-044,Quarterly performance report,adrian,ads,3,2026-06-27,medium,
+PA-045,Write VO narrative script,adrian,strategy,1,2026-04-11,high,
+PA-046,Generate VO via ElevenLabs,adrian,content,0.5,2026-04-14,high,
+PA-047,Select b-roll + edit with VO,matt,content,2,2026-04-18,high,
+PA-048,Add captions + export formats,matt,content,1,2026-04-21,medium,
+PA-049,Review + revisions,adrian,strategy,0.5,2026-04-23,medium,
+PA-050,Keyword research + campaign structure,adrian,ads,1.5,2026-04-18,high,
+PA-051,Ad copy writing,adrian,ads,1,2026-04-21,high,
+PA-052,Campaign build + settings (train Michael),adrian,ads,2,2026-04-25,high,
+PA-053,Monthly optimisation — May,michael,ads,1,2026-05-30,medium,
+PA-054,Monthly optimisation — June,michael,ads,1,2026-06-27,medium,
+PA-055,Quarterly performance report,adrian,ads,1.5,2026-06-27,medium,
+PA-056,GTM container setup + install on site,adrian,google,1,2026-04-11,high,
+PA-057,Meta pixel via GTM + event tracking,adrian,google,1,2026-04-14,high,
+PA-058,Google Ads conversion tracking via GTM,adrian,google,1,2026-04-18,high,
+PA-059,Test all conversions end-to-end,michael,google,1,2026-04-21,high,
+PA-060,Migration audit + planning,michael,website,1,2026-05-02,high,
+PA-061,Export + convert Webflow site,michael,website,2,2026-05-09,high,
+PA-062,Cloudflare Pages setup + deploy,michael,website,1,2026-05-14,high,
+PA-063,DNS migration + SSL + testing,michael,website,1,2026-05-16,high,
+PA-064,LP strategy + wireframe brief,adrian,strategy,1,2026-05-02,high,
+PA-065,LP copy writing,adrian,website,0.5,2026-05-05,high,
+PA-066,LP UX design,madison,design,3,2026-05-12,high,
+PA-067,LP development + build,michael,website,2,2026-05-19,high,
+PA-068,QA + responsive testing,michael,website,0.5,2026-05-21,medium,PA-067
+PA-069,Write GTM setup skill / playbook,adrian,automations,1,2026-05-23,medium,
+PA-070,Write conversion tracking skill / playbook,adrian,automations,1,2026-05-30,medium,
