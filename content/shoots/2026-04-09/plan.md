@@ -17,39 +17,42 @@
 
 ---
 
-## VIDEO 1: Split Install — The Before and After
+## VIDEO 1: Case Study — Today's Job Walkthrough
 
 **Framework:** Project Case Study
 
-**Final Concept:** Zac walks through a single split install on camera — what the homeowner had, why they needed this unit, what was installed, and the result. Short, scripted prompts. Zac answers in one sentence per beat. B-roll carries the story.
+**Final Concept:** Zac walks through the job as it's happening — what they're installing, which unit, why it's the right choice for this home, and what features it has. Features-led, not transformation-led. No before/after needed. Zac is the expert guide, B-roll carries the visual story. Short scripted prompts — one sentence per beat.
 
 **Script / Outline:**
 
-- **Act 1 — Hook/Context:** Zac stands in front of the new indoor unit (post-install). Scripted line: *"This room was hitting over 30 degrees inside. That's done now."* — then cut to B-roll of the install process.
-- **Act 2 — Process:** VO or on-camera: *"We put in a [brand] split — [X] kilowatt, right size for the room."* B-roll of outdoor unit going on brackets, indoor unit being levelled, lines being run.
-- **Act 3 — Result:** Zac puts his hand in front of the running unit. *"Does the job."* Unit powers on, cool air visible. Parker Air logo + website.
+- **Act 1 — Hook/Context:** Zac on camera next to the unit (boxed or mid-install). *"Today we're out in [suburb] putting in a [brand] split — here's what we're working with."*
+- **Act 2 — The Walkthrough:** Zac points out key features as B-roll covers it. Talking points (adapt to whatever unit is going in):
+  - What size/kilowatt and why it suits this room/home
+  - Key feature of the unit (e.g. inverter, quiet operation, wifi control, energy rating)
+  - One thing the homeowner will notice straight away
+- **Act 3 — Wrap:** *"Clean install, right unit for the job. That's what we do."* Unit powers on. Parker Air logo.
 
 **Hooks:**
-- *Source:* Result-Oriented Visual Hook + Problem/Solution Scripting Hook
-- *Visual Hook:* Cold air blasting from the brand new indoor unit — hand held in front of the airflow, first 2 seconds
-- *Verbal Hook:* "This room was hitting over 30 degrees inside. That's done now."
-- *Written Hook:* "30° inside. Not anymore."
+- *Source:* Authority/Guides Scripting Hook + Action-Based Visual Hook
+- *Visual Hook:* Zac standing next to the unit mid-install, hand on it — ownership, confidence
+- *Verbal Hook:* "Today we're out in [suburb] — here's what we're putting in and why."
+- *Written Hook:* "Today's job 👇"
 
 **Shot List:**
-- Outdoor unit mounted on wall brackets (wide + close)
-- Indoor head unit being levelled on wall
-- Refrigerant lines being run along wall/ceiling
-- Zac on camera — 3 scripted prompts (one sentence each)
-- Indoor unit powering on — first cool air (60fps for slow-mo)
-- Zac's hand in front of running unit
-- Wide of finished install — clean, tidy
+- Zac on camera — 3 scripted prompts (unit intro, 1–2 features, wrap line)
+- Unit being unboxed or mounted (B-roll to cover Act 2)
+- Close-up of unit branding/model label
+- Refrigerant lines being run
+- Indoor unit going up on wall
+- Unit powering on — first run (60fps)
+- Wide of clean finished install
 
 **Editor Notes:**
-- *Pacing:* Cold open with the finished unit and Zac's line, then back to install B-roll. Keep it under 60 seconds.
-- *Visuals:* Result first, then process. End on the running unit.
+- *Pacing:* Conversational walkthrough pace — not rushed. Under 60 seconds.
+- *Visuals:* Text callouts for the features Zac mentions (e.g. "5-star energy rating", "WiFi enabled") — editor adds these as animated labels
 - *Music:*
   - Genre: Confident Hip-Hop / Modern Corporate
-  - Energy/Mood: Competent, clean, satisfying
+  - Energy/Mood: Competent, knowledgeable, clean
   - BPM: 95–105
 
 ---
