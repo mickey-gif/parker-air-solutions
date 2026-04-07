@@ -90,7 +90,7 @@
 
 > **LINE 2 (The Promise)**
 > *(Zac stops walking. Static. Delivers this directly.)*
-> *"We turn up on time, we fix it properly, and we tell you the truth about what you need. No upsell. No bullshit."*
+> *"We turn up on time, we fix it properly, and we tell you the truth about what you need. No upsell. No bull."*
 
 > **LINE 3 (Payoff)**
 > *"That's Parker Air."*
