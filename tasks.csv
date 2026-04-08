@@ -3,7 +3,7 @@ PA-001,Shoot planning and brief — Cycle 1,adrian,strategy,0.5,2026-04-03,high,
 PA-002,Shoot day — filming — Cycle 1,matt,content,4,2026-04-07,high,PA-001
 PA-003,Complex reel edits x6 — Cycle 1,matt,content,9,2026-04-17,medium,PA-002
 PA-004,Simple reel edits x4 — Cycle 1,madison,content,3,2026-04-17,medium,PA-002
-PA-005,Photo gallery editing — Cycle 1,madison,content,1,2026-04-14,medium,PA-002
+PA-005,Photo gallery editing — Cycle 1,matt,content,1,2026-04-14,medium,PA-002
 PA-006,Infographics x2 — Cycle 1,madison,design,3,2026-04-17,medium,PA-002
 PA-007,Case study blog article — Cycle 1,michael,seo,1,2026-04-17,medium,PA-002
 PA-008,Content schedule + captions — Cycle 1,kim,content,1,2026-04-18,medium,PA-005;PA-003;PA-004;PA-006
@@ -11,7 +11,7 @@ PA-009,Shoot planning and brief — Cycle 2,adrian,strategy,0.5,2026-04-24,high,
 PA-010,Shoot day — filming — Cycle 2,matt,content,4,2026-04-28,high,PA-009
 PA-011,Complex reel edits x6 — Cycle 2,matt,content,9,2026-05-08,medium,PA-010
 PA-012,Simple reel edits x4 — Cycle 2,madison,content,3,2026-05-08,medium,PA-010
-PA-013,Photo gallery editing — Cycle 2,madison,content,1,2026-05-05,medium,PA-010
+PA-013,Photo gallery editing — Cycle 2,matt,content,1,2026-05-05,medium,PA-010
 PA-014,Infographics x2 — Cycle 2,madison,design,3,2026-05-08,medium,PA-010
 PA-015,Case study blog article — Cycle 2,michael,seo,1,2026-05-08,medium,PA-010
 PA-016,Content schedule + captions — Cycle 2,kim,content,1,2026-05-09,medium,PA-013;PA-011;PA-012;PA-014
@@ -19,7 +19,7 @@ PA-017,Shoot planning and brief — Cycle 3,adrian,strategy,0.5,2026-05-15,high,
 PA-018,Shoot day — filming — Cycle 3,matt,content,4,2026-05-19,high,PA-017
 PA-019,Complex reel edits x6 — Cycle 3,matt,content,9,2026-05-29,medium,PA-018
 PA-020,Simple reel edits x4 — Cycle 3,madison,content,3,2026-05-29,medium,PA-018
-PA-021,Photo gallery editing — Cycle 3,madison,content,1,2026-05-26,medium,PA-018
+PA-021,Photo gallery editing — Cycle 3,matt,content,1,2026-05-26,medium,PA-018
 PA-022,Infographics x2 — Cycle 3,madison,design,3,2026-05-29,medium,PA-018
 PA-023,Case study blog article — Cycle 3,michael,seo,1,2026-05-29,medium,PA-018
 PA-024,Content schedule + captions — Cycle 3,kim,content,1,2026-05-30,medium,PA-021;PA-019;PA-020;PA-022
@@ -27,7 +27,7 @@ PA-025,Shoot planning and brief — Cycle 4,adrian,strategy,0.5,2026-06-05,high,
 PA-026,Shoot day — filming — Cycle 4,matt,content,4,2026-06-09,high,PA-025
 PA-027,Complex reel edits x6 — Cycle 4,matt,content,9,2026-06-19,medium,PA-026
 PA-028,Simple reel edits x4 — Cycle 4,madison,content,3,2026-06-19,medium,PA-026
-PA-029,Photo gallery editing — Cycle 4,madison,content,1,2026-06-16,medium,PA-026
+PA-029,Photo gallery editing — Cycle 4,matt,content,1,2026-06-16,medium,PA-026
 PA-030,Infographics x2 — Cycle 4,madison,design,3,2026-06-19,medium,PA-026
 PA-031,Case study blog article — Cycle 4,michael,seo,1,2026-06-19,medium,PA-026
 PA-032,Content schedule + captions — Cycle 4,kim,content,1,2026-06-20,medium,PA-029;PA-027;PA-028;PA-030
