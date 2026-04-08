@@ -36,37 +36,23 @@ This is not a discount campaign. This is a reframe campaign. The offer is not a 
 Every pain point below is a direct consequence of NOT installing in winter. Each one is the setup; the core idea is the punchline.
 
 ### Pain Point 1 — The Summer Queue
-When the first 35°C day hits Brisbane, every HVAC company in South East Queensland goes from available to booked out in 48 hours. Wait times stretch 3–6 weeks. You made the call too late. You're already behind 200 other people who also left it too long.
+When the first hot day hits Brisbane, every installer in SEQ goes from available to booked out overnight. You're suddenly 3–6 weeks behind everyone else who also left it too late — waiting in the heat for a system you could have had months ago.
 
 **The solution the core idea provides:** Book in winter and you're first in line. Installers are available. You pick your date. You're done before the heat arrives.
 
 ---
 
-### Pain Point 2 — Summer Pricing
-Peak season demand inflates quotes. When installers are turning away work, they price accordingly. Rushing to book in November doesn't just cost you time — it costs you money.
+### Pain Point 2 — The Desperation Purchase
+Booking aircon in summer means you're already hot and stressed. You rush the consultation, skip the right questions, and sign off on a $7,000–$12,000 decision under pressure with no leverage and no time to think. Winter gives you calm, time, and the ability to make the right call.
 
-**The solution the core idea provides:** Winter is off-peak. Parker Air's schedule has room, which means competitive, honest pricing — not desperation rates.
-
----
-
-### Pain Point 3 — Rushed Installations Mean Problems
-When technicians are running back-to-back jobs across Brisbane in 38°C heat, shortcuts happen. Rushed installs lead to callbacks, warranty issues, and systems that underperform from day one.
-
-**The solution the core idea provides:** Winter bookings get careful, unhurried installations. Parker Air runs proper commissioning. Your Mitsubishi or Daikin system goes in right, the first time.
+**The solution the core idea provides:** A winter booking is a considered booking. No pressure on either side. Parker Air can properly assess your home, answer every question, and recommend the right system — not just the fastest one.
 
 ---
 
-### Pain Point 4 — You're Losing Winter Comfort Right Now
-A reverse-cycle air conditioner doesn't just cool — it's one of the most efficient ways to heat a home. Every cold week you spend without one is money spent on electric heaters or gas, comfort you're not getting, and energy bills that don't need to be that high.
+### Pain Point 3 — The Untested System
+A summer install leaves no room for error. If anything needs adjusting after the job — and it happens — you're calling for a callback in peak season, waiting weeks in the heat with a brand new system that isn't right. A winter install gives you months of real-world use before summer arrives. Any issues get resolved in mild weather. By November your system is tested, proven, and ready. First hot day — you just turn it on.
 
-**The solution the core idea provides:** Install now and start using it as a heater this winter. By the time summer arrives, you know the system, you've used it, and it's already delivering.
-
----
-
-### Pain Point 5 — First Hot Day = Too Late
-The moment the temperature spikes, the regret hits. You meant to sort it. You told yourself you would. Now you're making calls, being told "earliest availability is 4 weeks," and spending another summer wishing you'd moved sooner.
-
-**The solution the core idea provides:** People who book in winter never experience this moment. Their system is installed, tested, and ready before the heat is even a thought.
+**The solution the core idea provides:** Winter installation is a de-risked investment. If anything needs attention post-install, it gets handled in comfortable conditions long before your family depends on the system.
 
 ---
 
@@ -97,6 +83,15 @@ WARM (Retargeting) — Video viewers, page visitors, engagers
   ↓
 HOT (Conversion) — Lead form clicks, landing page visitors, direct inquiries
 ```
+
+### Pre-Launch Requirements
+
+Before any campaign goes live, two things must be confirmed:
+
+1. **Lead response SLA** — Parker Air must commit to same-day or next-business-day follow-up on every form submission. A campaign generating 50 leads with a 3-day response time will not convert. Recommend an SMS autoresponder fires immediately on form submit to confirm receipt and set expectations.
+2. **Google Business Profile audit** — Check Parker Air's review count and rating before the landing page build begins. If reviews are thin, the trust block needs a different anchor (years in business, number of installs, brand logos). Do not assume reviews are strong enough to lead with.
+
+---
 
 ### Campaign 1 — Prospecting (Cold Audiences)
 
@@ -137,12 +132,13 @@ The creative must feel like it's speaking to someone who hasn't thought about th
 
 ### Hook Strategy (First 3 Seconds)
 
-All hooks must enter with the problem of waiting, not with Parker Air. Examples:
+All hooks must enter with the problem of waiting, not with Parker Air. Urgency is present from day one — not introduced in Month 3. The hook itself carries the urgency; do not rely on late-campaign messaging to create it.
 
+Examples:
 - *"Everyone installs aircon in summer. That's exactly why you shouldn't."*
-- *"Brisbane's best HVAC installers are booked 5 weeks out every November. Here's how to not be that person."*
-- *"Your aircon should already be in. Here's why."*
-- *"Most people wait until the first hot day. By then, it's too late."*
+- *"Brisbane installers book out in 48 hours when summer hits. Most people find out too late."*
+- *"Parker Air's winter slots go faster than you'd think. Here's why that matters."*
+- *"Most people wait until the first hot day. By then, it's already too late."*
 
 ### Body Copy Structure (all formats)
 
@@ -199,33 +195,29 @@ Google Reviews embedded immediately after first scroll. Real names, real reviews
 
 ## Audience Personas (Targeting Reference)
 
+This campaign targets residential only. Small business/commercial runs different decision cycles, requires separate creative, and should be its own campaign. Do not mix into this campaign.
+
 ### Persona 1 — The Homeowner (Primary)
 - Brisbane/SEQ, 30–55, owns home, family household
 - Has thought about aircon before but always put it off
-- Pain point: will scramble in November and regret it
-- Motivation: comfort at home, sorted before summer
+- Fear: will scramble in November, be stuck in a queue, and spend another summer suffering
+- Motivation: sorted before summer, no scramble, no regret
 
 ### Persona 2 — The Renovator
 - Mid-reno or post-reno, 35–60
-- Installing or upgrading while walls are open anyway
-- Pain point: summer rush means a botched installation on a fresh renovation
-- Motivation: clean, proper install while there's time to do it right
-
-### Persona 3 — The Small Business Owner
-- SEQ, owns or leases commercial space
-- Operations depend on comfortable working environment
-- Pain point: losing productivity when system fails in summer heat
-- Motivation: reliable system in before summer = zero disruption
+- Installing while walls are open and the timing is right
+- Fear: summer rush means a rushed install on a freshly renovated home
+- Motivation: considered decision, proper install, system tested before summer arrives
 
 ---
 
 ## Monthly Milestones
 
-### Month 1 — April (Launch & Foundation)
+### Month 1 — April (Launch & Learn)
 - Week 1–2: Launch prospecting campaign with 3 ad creatives (1 video, 2 image)
 - Week 2: Confirm pixel firing correctly on landing page (lead event)
-- Week 3–4: First optimisation pass — pause ad sets with CPL >$80, test hook variants
-- **KPI targets:** 20+ leads, CPL <$60, CTR >1.5%
+- Week 3–4: First optimisation pass — identify best-performing hook, confirm pixel data is clean
+- **Month 1 is a learning phase — no hard CPL target.** Goals: 50+ link clicks, identify top hook by 3-second retention, confirm landing page is converting. Hard CPL targets begin Month 2 once there is data to optimise against.
 
 ### Month 2 — May (Optimise & Test)
 - Week 1–2: Launch retargeting campaign (video viewers + engagers)
