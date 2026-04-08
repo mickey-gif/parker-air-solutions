@@ -1,0 +1,13 @@
+id,name,quarter,area,budget_hours,logged_hours,status
+PA-P01,Content Cycle 1,Q2-2026,content,22.5,0,planned
+PA-P02,Content Cycle 2,Q2-2026,content,22.5,0,planned
+PA-P03,Content Cycle 3,Q2-2026,content,22.5,0,planned
+PA-P04,Content Cycle 4,Q2-2026,content,22.5,0,planned
+PA-P05,SEO Audit & Optimisation,Q2-2026,seo,10,0,planned
+PA-P06,Meta Ads Management,Q2-2026,ads,12,0,planned
+PA-P07,Voice Over Narrative Ad,Q2-2026,ads,5,0,planned
+PA-P08,Google Ads Setup & Launch,Q2-2026,ads,8,0,planned
+PA-P09,GTM & Conversion Tracking,Q2-2026,google,4,0,planned
+PA-P10,Webflow to Cloudflare Migration,Q2-2026,website,5,0,planned
+PA-P11,Local Services Landing Page,Q2-2026,website,7,0,planned
+PA-P12,Skills — GTM & Tracking Playbooks,Q2-2026,automations,2,0,planned
